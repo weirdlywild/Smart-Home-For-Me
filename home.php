@@ -20,7 +20,4 @@ if(mysqli_num_rows($result) > 0)
         $name = $row['name'];
     }
 }
-echo "This is ssecond page";
 ?>
-<h3>Welcome ,<?php echo $name; ?></h3>
-<h5><a href="logout.php">Logout</a></h5>
