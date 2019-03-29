@@ -1,2 +1,3 @@
 <?php
-include('/main/signup_data.php');
+    include('main/signup_data.php');
+?>

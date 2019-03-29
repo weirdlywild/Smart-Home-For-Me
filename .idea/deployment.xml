@@ -5,7 +5,7 @@
       <paths name="apache">
         <serverdata>
           <mappings>
-            <mapping deploy="SmartHome_NEW" local="$PROJECT_DIR$" web="SmartHome_NEW" />
+            <mapping deploy="Smart-Home-For-Me" local="$PROJECT_DIR$" web="Smart-Home-For-Me" />
           </mappings>
         </serverdata>
       </paths>

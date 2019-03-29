@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Smart Home For Me</title>
-    <link rel="stylesheet" href="/css/i_style.css">
-    <script src="/js/index_code.js"></script>
+
+    <link rel="stylesheet" href="css/i_style.css">
+    <script src="js/index_code.js"></script>
 </head>
 <body>
     <span class="back">
