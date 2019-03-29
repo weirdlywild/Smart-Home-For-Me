@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: PRUTHVI
+ * Date: 15-03-2019
+ * Time: 11:15 AM
+ */
+    echo "It work properly";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +82,23 @@
     <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
     <div class="container">
-        <h1>Welcome</h1>
+        <h1>LOG IN</h1>
+        <form action="login_code.php" method="post">
+            <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input type="email" id="txtemail" name="txtemail" placeholder="Email Id">
+            </div>
+            <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="pass" name="pass" placeholder="Password">
+            </div>
+            <label class="so_pass">
+                <input type="checkbox" onclick="shw_pass()"><strong>Show Password</strong>
+                <span class="checkmark"></span>
+            </label>
+            <input type="submit" id="btnsubmit" class="btn" value="Login">
+        </form>
+        <a id="signup" class="su" href="signup.php">Don't Have An Account ?</a>
     </div>
 </body>
 </html>
