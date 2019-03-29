@@ -7,8 +7,15 @@
     <script src="index_code.js"></script>
 </head>
 <body>
-    <div class="pre" id="preload">
-        <img src="images/39.svg" alt="loading...">
-    </div>
+    <span class="back">
+	<span>L</span>
+	<span>O</span>
+	<span>A</span>
+	<span>D</span>
+	<span>I</span>
+	<span>N</span>
+	<span>G</span>
+    </span>
+
 </body>
 </html>
