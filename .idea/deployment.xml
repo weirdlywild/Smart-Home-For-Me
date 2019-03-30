@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="apache">
+  <component name="PublishConfigData">
     <serverData>
       <paths name="apache">
         <serverdata>
           <mappings>
-            <mapping deploy="SmartHome_NEW" local="$PROJECT_DIR$" web="SmartHome_NEW" />
+            <mapping deploy="Smart-Home-For-Me" local="$PROJECT_DIR$" web="Smart-Home-For-Me" />
           </mappings>
         </serverdata>
       </paths>
