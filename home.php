@@ -24,3 +24,8 @@ echo "This is ssecond page";
 ?>
 <h3>Welcome ,<?php echo $name; ?></h3>
 <h5><a href="logout.php">Logout</a></h5>
+<h2>Click below button for Add Devices</h2>
+<a href='device.php'><button>Add Device</button></a>
+<fieldset>
+    <legend></legend>
+</fieldset>

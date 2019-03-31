@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         var check = function() {
-        if (document.getElementById('pass').value != document.getElementById('cfmpass').value) {
+        if (document.getElementById('pass').value !== document.getElementById('cfmpass').value) {
             document.getElementById('msg').style.color = 'red';
             document.getElementById('msg').innerHTML = 'password not matching';
         }
