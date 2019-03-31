@@ -19,18 +19,21 @@ if(mysqli_num_rows($result) > 0)
     {
         $lpass = $row['password'];
     }
+}else
+{
+    echo "Error :".$sql;
 }
 if ($dpass!=$lpass){
     header("Location: device.php");
 }else{
-    $dsql ="INSERT INTO $cat (`email`, `name`, `dis`, `gpio`) VALUES ('$email', '$name', '$dis', '$gpio')";
-    $dresult = mysqli_query($conn_device , $dsql);
-    if($dresult)
+    $desql ="INSERT INTO $cat (`device_id`, `email`, `name`, `dis`, `gpio`) VALUES (NULL,'$email', '$name', '$dis', '$gpio')";
+    $deresult = mysqli_query($conn_device , $desql);
+    if($deresult)
     {
-        header("Location: home.php");
+        header("Location: dashbord.php");
     }
     else
     {
-        echo "Error :".$sql;
+        echo "Error :".$dsql;
     }
 }

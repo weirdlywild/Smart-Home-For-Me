@@ -21,6 +21,19 @@ main{
 li{
   font-size: 20px;
 }
+.ur1{
+  margin-left: 22%;
+}
+.hello_l{
+  float: left;
+  background: none;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 25px;
+
+}
 .ur:hover{
   border-bottom: 4px solid #4caf50;
 }
@@ -28,8 +41,7 @@ li{
 border-bottom: 6px solid #4caf50;
 }
 .imgcontainer{
-  text-align: center;
-  margin-right: 20%;
+ margin-left: 5%;
 }
 img.avatar {
     width: 50%;
