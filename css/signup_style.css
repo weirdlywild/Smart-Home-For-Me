@@ -2,14 +2,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url(../images/bg3.jpg) no-repeat;
+    background: black;
     background-size: cover;
 }
 .container{
     width: auto;
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 50%;
     transform: translate(-50%,-50%);
     color: white;
 }
