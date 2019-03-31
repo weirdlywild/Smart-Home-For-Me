@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>ADD DEVICE</title>
     <script type="text/javascript">
@@ -33,7 +33,6 @@
         <label for="dpass">Password :</label><input type="password" id="dpass" name="dpass" placeholder="Password" required="" autocomplete="off"><br />
 
         <input type="submit" id="btn" class="btn" value="Add Device" onclick="Validate()">
-        <span id="msg" > <?php echo $msg=''; ?> </span>
     </form>
 </body>
 </html>
