@@ -25,7 +25,7 @@ if(mysqli_num_rows($result) > 0)
         session_start();
         $_SESSION['email'] = $email;
     }
-    header("Location: home.php");
+    header("Location: dashbord.php");
 }
 else
 {

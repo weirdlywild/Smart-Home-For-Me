@@ -3,6 +3,10 @@
 <html lang="en">
 <head>
 <title>ADD DEVICE</title>
+    <link rel="stylesheet" href="css/device_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript">
         function Validate()
         {
@@ -14,25 +18,46 @@
             }
         }
     </script>
+
 </head>
 <body>
+<div class="container">
+    <h1 class="heading">Add Device</h1>
+
     <form action="device_code.php" method="post">
-        <label for="selcat">Category</label><select id="selcat" name="selcat" required="">
-            <option value="null">Select Category</option>
-            <option value="bedroom">Bedroom</option>
-            <option value="hall">Hall</option>
-            <option value="kitchen">Kitchen</option>
-        </select><br />
+        <div class="slt">
+            <select  id="selcat" name="selcat" required="">
+                <option value="null">Select Category</option>
+                <option value="bedroom">Bedroom</option>
+                <option value="hall">Hall</option>
+                <option value="kitchen">Kitchen</option>
+            </select>
+        </div>
 
-        <label for="txtdname">Device Name :</label><input type="text" id="txtdname" name="txtdname" placeholder="Enter Device Name" required=""><br />
+        <div class="textbox">
+            <i class="material-icons">&#xe1b1;</i>
+            <input type="text" id="txtdname" name="txtdname" placeholder="Enter Device Name" required="" autofocus>
+        </div>
 
-        <label for="txtddis">Device Description :</label><input type="text" id="txtddis" name="txtddis" placeholder="Enter Device Description" required=""><br />
+        <div class="textbox">
+            <i class="material-icons">&#xe0cb;</i>
+            <input type="text" id="txtddis" name="txtddis" placeholder="Enter Device Description" required="">
+        </div>
 
-        <label for="txtdpin">GPIO PIN :</label><input type="text" id="txtdpin" name="txtdpin" placeholder="Enter GPIO PIN" pattern="[0-9]+" required=""><br />
+        <div class="textbox">
+            <i class="material-icons">&#xe30f;</i>
+            <input type="text" id="txtdpin" name="txtdpin" placeholder="Enter GPIO PIN" pattern="[0-9]+" required="">
+        </div>
 
-        <label for="dpass">Password :</label><input type="password" id="dpass" name="dpass" placeholder="Password" required="" autocomplete="off"><br />
-
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="dpass" name="dpass" placeholder="Password" required="" autocomplete="off">
+        </div>
         <input type="submit" id="btn" class="btn" value="Add Device" onclick="Validate()">
+    <a href="dashbord.php">
+        <button class="btn">Go Back</button></a>
     </form>
+
+</div>
 </body>
 </html>
