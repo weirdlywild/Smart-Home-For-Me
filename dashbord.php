@@ -1,3 +1,20 @@
+<?php
+session_start();
+require_once ('dbconn.php');
+if (empty($_SESSION['email'])){
+header("Location: login.php");
+}
+$email = $_SESSION['email'];
+$sql = "SELECT * FROM main_data WHERE email= '$email'";
+$result = mysqli_query($conn , $sql);
+if(mysqli_num_rows($result) > 0)
+{
+while($row = mysqli_fetch_assoc($result))
+{
+$name = $row['name'];
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,18 +37,16 @@
   <body>
     <div class="container-fluid h-100">
     <div class="row h-100">
-        <aside class="col-12 col-md-2  p-0 ">
+        <aside class="col-12 col-md-3  p-0 ">
             <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
                 <div class="collapse navbar-collapse">
                     <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                         <li class="nav-item1 hello">
                             <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt" style="color:white;">SMART HOME</span></a>
                         </li>
-                          <span>
                                     <div class="imgcontainer">
                                       <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
                                     </div>
-                          </span>
                           <li>
                             &nbsp
                           </li>
@@ -63,12 +78,13 @@
           <br>
           <br>
 
-          <h1><span class="heading">Dashbord</span></h1>
-		  <h3>Welcome to the dashbord<h3>
+          <h1><span class="heading">Welcome To The Dashbord</span></h1>
+            <span class="bnt_a"><a href='device.php'><button class="bnt"><strong>Add Device</strong></button></a></span>
+            <fieldset class="col-md-12">
+  					<legend style="color:white;"><spam class="leg_ti">Bed Room</spam></legend>
+  							<div style="color: white; background-color: black;">
 
-              <fieldset class="col-md-12">
-  					<legend style="color:white;"><spam class="leg_ti">BedRoom</spam></legend>
-  							<p style="background:black;">Fieldset content...</p>
+                            </div>
   				</fieldset>
      </main>
     </div>

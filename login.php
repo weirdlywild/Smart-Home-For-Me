@@ -84,7 +84,8 @@
 </div>
     <div class="container">
         <h1>LOG IN</h1>
-        <form action="login_code.php" method="post">            <div class="textbox">
+        <form action="login_code.php" method="post">
+            <div class="textbox">
                 <i class="fas fa-user"></i>
                 <input type="email" id="txtemail" name="txtemail" placeholder="Email Id">
             </div>
