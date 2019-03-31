@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/login_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/hide.js"></script> <!-- This is for dont see inspect element or code in browser -->
     <style>
         .icon-bar {
             position: fixed;
@@ -73,7 +74,7 @@
         }
     </script>
 </head>
-<body>
+<body oncontextmenu="return false">
 ​<div class="icon-bar">
     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -83,8 +84,7 @@
 </div>
     <div class="container">
         <h1>LOG IN</h1>
-        <form action="login_code.php" method="post">
-            <div class="textbox">
+        <form action="login_code.php" method="post">            <div class="textbox">
                 <i class="fas fa-user"></i>
                 <input type="email" id="txtemail" name="txtemail" placeholder="Email Id">
             </div>
