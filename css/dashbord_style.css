@@ -63,7 +63,6 @@ h1{
 fieldset
 {
 border: 3px solid #4caf50 !important;
-margin: 0;
 xmin-width: 0;
 padding: 10px;
 border-radius:4px;
@@ -76,7 +75,9 @@ legend
   background-color: #000000;
   border-bottom: 3px solid #4caf50 !important;
   padding-left: 15px;
-
+}
+.fdl{
+margin-top: 20px;
 }
 .leg_ti{
   margin-left: 15px;
@@ -93,6 +94,46 @@ margin-bottom: 20px;
   float: right;
   margin-right: 50px;
 }
+table{
+/*border: 1px solid #ffffff;
+  */width: 100%;
+  margin-bottom: 15px;
+}
+td{
+  font-size: 20px;
+}
+.fa-toggle-on{
+  color: green;
+}
+.fa-toogle-off{
+  color: red;
+}
+.toggleCheck {
+  display: none;
+}
+
+.toggleBtn {
+  display: block;
+  padding: 2px;
+  width: 30px;
+  height: 15px;
+  border-radius: 40px;
+  background: red;
+  transition: 240ms;
+}
+
+.toggleBtn::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+  transition: 240ms;
+}
+
+.toggleCheck:checked + .toggleBtn { background: green; }
+.toggleCheck:checked + .toggleBtn::after { transform: translateX(100%); }
 @media screen and (min-width: 601px) {
   .heading{
     font-size: 65px;

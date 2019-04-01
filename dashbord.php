@@ -32,7 +32,19 @@ $name = $row['name'];
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-
+<script>
+function tgl(x){
+  /*var x = document.getElementById("tb");
+    if (x.className === "fa fa-toggle-off") {
+      x.className = "fa fa-toggle-on";
+      document.getElementById("tb").style.color = "green";
+    } else {
+      x.className = "fa fa-toggle-off";
+      document.getElementById("tb").style.color = "red";
+    }*/
+    alert("GPIO PIN IS "+x);
+}
+</script>
   </head>
   <body>
     <div class="container-fluid h-100">
@@ -91,7 +103,7 @@ $name = $row['name'];
                 <span class="hello_l">Hello,<span> <?php echo "$name"; ?></span></span>
                 <span><a href='device.php'><button class="bnt"><strong>Add Device</strong></button></a></span>
             </div>
-
+<div class="fdl">
             <fieldset class="col-md-12">
                 <legend style="color:white;"><spam class="leg_ti">Bed Room</spam></legend>
                     <div style="color: white; background-color: black;">
@@ -100,21 +112,30 @@ $name = $row['name'];
                             $dbresult=mysqli_query($conn_device,$dbsql);
                             if(mysqli_num_rows($dbresult) > 0)
                             {
+                              echo "<table>
+                              <tr>
+                                  <th>Device Name</th>
+                                  <th>Device Description</th>
+                              </tr>";
                                 while($dbrow = mysqli_fetch_assoc($dbresult))
                                 {
                                     $dbname = $dbrow['name'];
                                     $dbdis = $dbrow['dis'];
                                     $dbgpio = $dbrow['gpio'];
                                     echo "
-                                    <table>
                                     <tr>
                                         <td>$dbname</td>
-                                        <td>&nbsp</td>
-                                        <td>&nbsp</td>
-                                        <td>$dbdis</td>
+                                        <td>$dbdis</td> ";
+                                  ?>
+                                        <td>
+                                          <input class="toggleCheck" id="'<?php echo $dbgpio; ?>'" type="checkbox" onclick="tgl('<?php echo $dbgpio; ?>');">
+                                          <label class="toggleBtn" for="'<?php echo $dbgpio; ?>'"></label>
+                                        <!--  <i id="tb" class="fa fa-toggle-on" onclick="tgl('<?php echo $dbgpio; ?>');"></i> -->
+                                        </td>
                                     </tr>
-                                    </table>";
+                                    <?php
                                 }
+                                echo "</table>";
                             }else
                             {
                                 echo "No Data Available";
@@ -122,6 +143,8 @@ $name = $row['name'];
                             ?>
                     </div>
             </fieldset>
+</div>
+<div class="fdl">
             <fieldset class="col-md-12">
                 <legend style="color:white;"><spam class="leg_ti">Hall</spam></legend>
                 <div style="color: white; background-color: black;">
@@ -130,21 +153,30 @@ $name = $row['name'];
                     $dhresult=mysqli_query($conn_device,$dhsql);
                     if(mysqli_num_rows($dhresult) > 0)
                     {
+                      echo "<table>
+                      <tr>
+                          <th>Device Name</th>
+                          <th>Device Description</th>
+                      </tr>";
                         while($dhrow = mysqli_fetch_assoc($dhresult))
                         {
                             $dhname = $dhrow['name'];
                             $dhdis = $dhrow['dis'];
                             $dhgpio = $dhrow['gpio'];
                             echo "
-                            <table>
                             <tr>
                                 <td>$dhname</td>
-                                <td>&nbsp</td>
-                                <td>&nbsp</td>
-                                <td>$dhdis</td>
+                                <td>$dhdis</td> ";
+                          ?>
+                                <td>
+                                  <input class="toggleCheck" id="'<?php echo $dhgpio; ?>'" type="checkbox" onclick="tgl('<?php echo $dhgpio; ?>');">
+                                  <label class="toggleBtn" for="'<?php echo $dhgpio; ?>'"></label>
+                                <!--  <i id="tb" class="fa fa-toggle-on" onclick="tgl('<?php echo $dhgpio; ?>');"></i> -->
+                                </td>
                             </tr>
-                            </table>";
+                            <?php
                         }
+                        echo "</table>";
                     }else
                     {
                         echo "No Data Available";
@@ -152,6 +184,8 @@ $name = $row['name'];
                     ?>
                 </div>
             </fieldset>
+</div>
+<div class="fdl">
             <fieldset class="col-md-12">
                 <legend style="color:white;"><spam class="leg_ti">Kitchen</spam></legend>
                 <div style="color: white; background-color: black;">
@@ -160,21 +194,30 @@ $name = $row['name'];
                     $dkresult=mysqli_query($conn_device,$dksql);
                     if(mysqli_num_rows($dkresult) > 0)
                     {
+                      echo "<table>
+                      <tr>
+                          <th>Device Name</th>
+                          <th>Device Description</th>
+                      </tr>";
                         while($dkrow = mysqli_fetch_assoc($dkresult))
                         {
                             $dkname = $dkrow['name'];
                             $dkdis = $dkrow['dis'];
                             $dkgpio = $dkrow['gpio'];
                             echo "
-                            <table>
                             <tr>
-                                <td>$dkname</td>
-                                <td>&nbsp</td>
-                                <td>&nbsp</td>
-                                <td>$dkdis</td>
+                                <td>$dbname</td>
+                                <td>$dbdis</td> ";
+                          ?>
+                                <td>
+                                  <input class="toggleCheck" id="'<?php echo $dkgpio; ?>'" type="checkbox" onclick="tgl('<?php echo $dkgpio; ?>');">
+                                  <label class="toggleBtn" for="'<?php echo $dkgpio; ?>'"></label>
+                                <!--  <i id="tb" class="fa fa-toggle-on" onclick="tgl('<?php echo $dkgpio; ?>');"></i> -->
+                                </td>
                             </tr>
-                            </table>";
+                            <?php
                         }
+                        echo "</table>";
                     }else
                     {
                         echo "No Data Available";
@@ -182,6 +225,7 @@ $name = $row['name'];
                     ?>
                 </div>
             </fieldset>
+</div>
      </main>
     </div>
 </div>
