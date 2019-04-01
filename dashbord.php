@@ -45,7 +45,7 @@ $name = $row['name'];
                             <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt" style="color:white;">SMART HOME</span></a>
                         </li>
                                     <div class="imgcontainer">
-                                      <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+                                     <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
                                     </div>
                           <li>
                             &nbsp
