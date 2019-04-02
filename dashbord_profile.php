@@ -12,6 +12,8 @@ if(mysqli_num_rows($result) > 0)
 while($row = mysqli_fetch_assoc($result))
 {
 $name = $row['name'];
+$email = $row['email'];
+$phone =$row['phone'];
 }
 }
 ?>
@@ -61,7 +63,7 @@ $name = $row['name'];
                           &nbsp
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a> <!-- profile -->
+                          <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">EDIT PROFILE</span></a> <!-- profile -->
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">
@@ -88,12 +90,19 @@ $name = $row['name'];
           <br>
           <br>
 <div>
-          <h1><span class="heading">PROFILE</span></h1>
+          <h1><span class="heading">EDIT PROFILE</span></h1>
 </div>
 <div>
+<span><a href='change_pass.php'><button class="bnt flt_r"><strong>Change Password</strong></button></a></span>
+</div>
+<br/>
+<div>
       <form class="f_p" action="index.html" method="post">
-      <span>  <input type="text" class="text_box dis" placeholder="" disabled></span>
-
+        <div><input type="text" class="text_box" placeholder="Enter Your New Name" value="<?php echo "$name"; ?>"></div>
+      <div><input type="text" class="text_box dis" placeholder="<?php echo "$email"; ?>" disabled></div>
+      <div><input type="tel" class="text_box" placeholder="Enter Your New Phone"value="<?php echo "$phone"; ?>"></div>
+      <div><input type="password" class="text_box" placeholder="Enter Your Password"></div>
+      <div><input type="submit" class="bnt mg_btn" value="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Submit Changes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"></div>
       </form>
 </div>
      </main>

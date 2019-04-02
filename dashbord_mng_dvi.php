@@ -31,7 +31,13 @@ $name = $row['name'];
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<script>
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+window.onload = timedRefresh(5000);
 
+</script>
   </head>
   <body>
     <div class="container-fluid h-100">
@@ -58,7 +64,7 @@ $name = $row['name'];
                           &nbsp
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a> <!-- profile -->
+                          <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">EDIT PROFILE</span></a> <!-- profile -->
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">
@@ -86,6 +92,122 @@ $name = $row['name'];
           <br>
 
           <h1><span class="heading">MANAGE DEVICES</span></h1>
+          <div class="fdl">
+                      <fieldset class="col-md-12">
+                          <legend style="color:white;"><spam class="leg_ti">Bed Room</spam></legend>
+                              <div style="color: white; background-color: black;">
+                                  <?php
+                                      $dbsql="SELECT * FROM bedroom";
+                                      $dbresult=mysqli_query($conn_device,$dbsql);
+                                      if(mysqli_num_rows($dbresult) > 0)
+                                      {
+                                        echo "<table>
+                                        <tr>
+                                            <th>Device Name</th>
+                                            <th>Device Description</th>
+                                        </tr>";
+                                          while($dbrow = mysqli_fetch_assoc($dbresult))
+                                          {
+                                              $dbname = $dbrow['name'];
+                                              $dbdis = $dbrow['dis'];
+                                              $dbgpio = $dbrow['gpio'];
+                                              echo "
+                                              <tr>
+                                                  <td>$dbname</td>
+                                                  <td>$dbdis</td> ";
+                                            ?>
+                                                  <td>
+
+                                                </td>
+                                              </tr>
+                                              <?php
+                                          }
+                                          echo "</table>";
+                                      }else
+                                      {
+                                          echo "No Data Available";
+                                      }
+                                      ?>
+                              </div>
+                      </fieldset>
+          </div>
+          <div class="fdl">
+                      <fieldset class="col-md-12">
+                          <legend style="color:white;"><spam class="leg_ti">Hall</spam></legend>
+                          <div style="color: white; background-color: black;">
+                              <?php
+                              $dhsql="SELECT * FROM hall";
+                              $dhresult=mysqli_query($conn_device,$dhsql);
+                              if(mysqli_num_rows($dhresult) > 0)
+                              {
+                                echo "<table>
+                                <tr>
+                                    <th>Device Name</th>
+                                    <th>Device Description</th>
+                                </tr>";
+                                  while($dhrow = mysqli_fetch_assoc($dhresult))
+                                  {
+                                      $dhname = $dhrow['name'];
+                                      $dhdis = $dhrow['dis'];
+                                      $dhgpio = $dhrow['gpio'];
+                                      echo "
+                                      <tr>
+                                          <td>$dhname</td>
+                                          <td>$dhdis</td> ";
+                                    ?>
+                                          <td>
+
+                                          </td>
+                                      </tr>
+                                      <?php
+                                  }
+                                  echo "</table>";
+                              }else
+                              {
+                                  echo "No Data Available";
+                              }
+                              ?>
+                          </div>
+                      </fieldset>
+          </div>
+          <div class="fdl">
+                      <fieldset class="col-md-12">
+                          <legend style="color:white;"><spam class="leg_ti">Kitchen</spam></legend>
+                          <div style="color: white; background-color: black;">
+                              <?php
+                              $dksql="SELECT * FROM kitchen";
+                              $dkresult=mysqli_query($conn_device,$dksql);
+                              if(mysqli_num_rows($dkresult) > 0)
+                              {
+                                echo "<table>
+                                <tr>
+                                    <th>Device Name</th>
+                                    <th>Device Description</th>
+                                </tr>";
+                                  while($dkrow = mysqli_fetch_assoc($dkresult))
+                                  {
+                                      $dkname = $dkrow['name'];
+                                      $dkdis = $dkrow['dis'];
+                                      $dkgpio = $dkrow['gpio'];
+                                      echo "
+                                      <tr>
+                                          <td>$dkname</td>
+                                          <td>$dkdis</td> ";
+                                    ?>
+                                          <td>
+                                          </td>
+                                      </tr>
+                                      <?php
+                                  }
+                                  echo "</table>";
+                              }else
+                              {
+                                  echo "No Data Available";
+                              }
+                              ?>
+                          </div>
+                      </fieldset>
+          </div>
  </main>
     </div>
 </div>

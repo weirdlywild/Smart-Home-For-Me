@@ -61,11 +61,40 @@ h1{
 	border-bottom: 6px solid #4caf50;
 }
 .f_p{
-  margin-top: 20%;
-  margin-left: 30%;
+  margin-top: 100px;
+  margin-left: 25%;
 }
 .dis{
   cursor: no-drop;
+  color: white;
+}
+.text_box{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  width: 300px;
+  margin: 0 10px;
+  border-bottom: 1px solid #4caf50;
+  margin-top: 20px;
+}
+.bnt{
+  border: 2px solid #4caf50;
+  background: none;
+  color: white;
+margin-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 25px;
+  margin-right: 50px;
+
+}
+.flt_r{
+  float: right;
+}
+.mg_btn{
+  margin-left: 15px;
 }
 @media screen and (min-width: 601px) {
   .heading{
