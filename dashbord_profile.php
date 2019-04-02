@@ -97,12 +97,12 @@ $phone =$row['phone'];
 </div>
 <br/>
 <div>
-      <form class="f_p" action="index.html" method="post">
-        <div><input type="text" class="text_box" placeholder="Enter Your New Name" value="<?php echo "$name"; ?>"></div>
-      <div><input type="text" class="text_box dis" placeholder="<?php echo "$email"; ?>" disabled></div>
-      <div><input type="tel" class="text_box" placeholder="Enter Your New Phone"value="<?php echo "$phone"; ?>"></div>
-      <div><input type="password" class="text_box" placeholder="Enter Your Password"></div>
-      <div><input type="submit" class="bnt mg_btn" value="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Submit Changes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"></div>
+      <form class="f_p" action="dashbord_profile_code.php" method="post">
+        <div><input type="text" id="txtname" name="txtname" class="text_box" placeholder="<?php echo "$name"; ?>" value="<?php echo "$name"; ?>"></div>
+      <div><input type="text" id="txtemail" name="txtemail" class="text_box dis" placeholder="<?php echo "$email"; ?>" disabled></div>
+      <div><input type="tel" id="txtmobile" name="txtmobile" class="text_box" placeholder="<?php echo "$phone"; ?>" value="<?php echo "$phone"; ?>"></div>
+      <div><input type="password" id="pass" name="pass" class="text_box" placeholder="Enter Your Password"></div>
+      <div><input type="submit" id="btnsub" class="bnt mg_btn" value="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Submit Changes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"></div>
       </form>
 </div>
      </main>

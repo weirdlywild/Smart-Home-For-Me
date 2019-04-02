@@ -35,7 +35,7 @@ $name = $row['name'];
 function timedRefresh(timeoutPeriod) {
 	setTimeout("location.reload(true);",timeoutPeriod);
 }
-window.onload = timedRefresh(5000);
+window.onload = timedRefresh(10000);
 
 </script>
   </head>
