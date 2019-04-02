@@ -36,49 +36,50 @@ $name = $row['name'];
   <body>
     <div class="container-fluid h-100">
     <div class="row h-100">
-        <aside class="col-12 col-md-3  p-0 ">
-            <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
-                <div class="collapse navbar-collapse">
-                    <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-                        <li class="nav-item1 hello">
-                            <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt" style="color:white;">SMART HOME</span></a>
+      <aside class="col-12 col-md-3  p-0 ">
+          <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
+              <div class="collapse navbar-collapse">
+                  <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                      <li class="nav-item1 hello">
+                          <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt" style="color:white;">SMART HOME</span></a>
+                      </li>
+                                  <div class="imgcontainer d-none d-md-inline">
+                                   <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+                                  </div>
+                        <li>
+                          &nbsp
                         </li>
-                          <span>
-                                    <div class="imgcontainer d-none d-md-inline">
-                                      <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
-                                    </div>
-                          </span>
-                          <li>
-                            &nbsp
-                          </li>
-                          <li>
-                             <span class="ur1 d-none d-md-inline" style="color:white;">
-                                 &nbsp<?php echo "$name"; ?>
-                             </span>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a> <!-- profile -->
-                        </li>
-                        <li>&nbsp</li>
-                        <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_mng_dvi.php"><i class="fa fa-gears fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">MANAGE DEVICES</span></a>  <!-- manage devices -->
-                        </li>
-                        <li>&nbsp</li>
-                        <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_contactus.php"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a> <!-- contact us  -->
-                        </li>
-                        <li>&nbsp</li>
-                        <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_aboutus.php"><i class="fa fa-id-badge fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">ABOUT US</span></a> <!-- about us -->
-                        </li>
-                        <li>&nbsp</li>
-                        <li class="nav-item">
-                            <a class="nav-link pl-0" href="logout.php"><i class="fa fa-power-off fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">LOG OUT</span></a> <!--log out -->
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </aside>
+                      <li>
+                         <span class="ur1 d-none d-md-inline" style="color:white;">
+                             &nbsp<?php echo "$name"; ?>
+                         </span>
+                      </li>
+                      <li>
+                          &nbsp
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a> <!-- profile -->
+                      </li>
+                      <li>&nbsp</li>
+                      <li class="nav-item">
+                          <a class="nav-link pl-0" href="dashbord_mng_dvi.php"><i class="fa fa-gears fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur" style="color:white;">MANAGE DEVICES</span></a>  <!-- manage devices -->
+                      </li>
+                      <li>&nbsp</li>
+                      <li class="nav-item">
+                          <a class="nav-link pl-0" href="dashbord_contactus.php"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a> <!-- contact us  -->
+                      </li>
+                      <li>&nbsp</li>
+                      <li class="nav-item">
+                          <a class="nav-link pl-0" href="dashbord_aboutus.php"><i class="fa fa-id-badge fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">ABOUT US</span></a> <!-- about us -->
+                      </li>
+                      <li>&nbsp</li>
+                      <li class="nav-item">
+                          <a class="nav-link pl-0" href="logout.php"><i class="fa fa-power-off fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">LOG OUT</span></a> <!--log out -->
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </aside>
         <main class="col next">
           <br>
           <br>
