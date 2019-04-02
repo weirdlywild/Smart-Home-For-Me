@@ -30,14 +30,16 @@ $name = $row['name'];
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-<script>
-function timedRefresh(timeoutPeriod) {
-	setTimeout("location.reload(true);",timeoutPeriod);
+<style>
+i{
+  color: white;
 }
-window.onload = timedRefresh(10000);
-
-</script>
+i:hover{
+  color: red;
+}
+</style>
   </head>
   <body>
     <div class="container-fluid h-100">
@@ -116,9 +118,9 @@ window.onload = timedRefresh(10000);
                                                   <td>$dbname</td>
                                                   <td>$dbdis</td> ";
                                             ?>
-                                                  <td>
-
-                                                </td>
+                                            <td>
+                                              <span class="dlt_hvr"><button class="bnt"><i class="material-icons">&#xe872;</i></button>
+                                            </span></td>
                                               </tr>
                                               <?php
                                           }
@@ -155,9 +157,9 @@ window.onload = timedRefresh(10000);
                                           <td>$dhname</td>
                                           <td>$dhdis</td> ";
                                     ?>
-                                          <td>
-
-                                          </td>
+                                    <td>
+                                    <span class="dlt_hvr">  <button class="bnt"><i class="material-icons">&#xe872;</i></button>
+                                    </span></td>
                                       </tr>
                                       <?php
                                   }
@@ -195,7 +197,8 @@ window.onload = timedRefresh(10000);
                                           <td>$dkdis</td> ";
                                     ?>
                                           <td>
-                                          </td>
+                                          <span class="dlt_hvr"><button class="bnt"><i class="material-icons">&#xe872;</i></button>
+                                          </span></td>
                                       </tr>
                                       <?php
                                   }
