@@ -1,11 +1,3 @@
-<?php
-include 'dbconn.php';
-session_start();
-if (empty($_SESSION['email'])){
-    header("Location: login.php");
-}
-?>
-
 <?php //read for bedroom
 $dlbsql="SELECT * FROM bedroom";
 $dlbresult=mysqli_query($conn_device,$dlbsql);
@@ -26,7 +18,7 @@ if(mysqli_num_rows($dlbresult) > 0)
         }
     }
 }
-?>//read bedroom over
+?>
 
 <?php //read for hall
 $dlhsql="SELECT * FROM hall";
@@ -48,7 +40,7 @@ if(mysqli_num_rows($dlhresult) > 0)
         }
     }
 }
-?>//read for hall over
+?>
 
 <?php //read for kitchen
 $dlksql="SELECT * FROM kitchen";
@@ -70,4 +62,4 @@ if(mysqli_num_rows($dlkresult) > 0)
         }
     }
 }
-?>//read for hall over
+?>

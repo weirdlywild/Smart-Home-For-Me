@@ -59,7 +59,7 @@ $name = $row['name'];
                             &nbsp
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a>
+                            <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">EDIT PROFILE</span></a>
                         </li>
                         <li>&nbsp</li>
                         <li class="nav-item">
