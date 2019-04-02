@@ -87,47 +87,15 @@ $name = $row['name'];
           <br>
           <br>
           <br>
-
+<div>
           <h1><span class="heading">PROFILE</span></h1>
-          <div class="container">
-              <h1 class="heading">Add Device</h1>
+</div>
+<div>
+      <form class="f_p" action="index.html" method="post">
+      <span>  <input type="text" class="text_box dis" placeholder="" disabled></span>
 
-              <form action="device_code.php" method="post">
-                  <div class="slt">
-                      <select class="dropdown" id="selcat" name="selcat" required="">
-                          <option value="null">Select Category</option>
-                          <option value="bedroom">Bedroom</option>
-                          <option value="hall">Hall</option>
-                          <option value="kitchen">Kitchen</option>
-                      </select>
-                  </div>
-
-                  <div class="textbox">
-                      <i class="material-icons">&#xe1b1;</i>
-                      <input type="text" id="txtdname" name="txtdname" placeholder="Enter Device Name" required="" autofocus>
-                  </div>
-
-                  <div class="textbox">
-                      <i class="material-icons">&#xe0cb;</i>
-                      <input type="text" id="txtddis" name="txtddis" placeholder="Enter Device Description" required="">
-                  </div>
-
-                  <div class="textbox">
-                      <i class="material-icons">&#xe30f;</i>
-                      <input type="text" id="txtdpin" name="txtdpin" placeholder="Enter GPIO PIN" pattern="[0-9]+" required="">
-                  </div>
-
-                  <div class="textbox">
-                      <i class="fas fa-lock"></i>
-                      <input type="password" id="dpass" name="dpass" placeholder="Password" required="" autocomplete="off">
-                  </div>
-                  <input type="submit" id="btn" class="btn" value="Add Device" onclick="Validate()">
-              </form>
-              <a href="dashbord.php">
-                  <button class="btn">Go Back</button></a>
-
-          </div>
-
+      </form>
+</div>
      </main>
     </div>
 </div>
