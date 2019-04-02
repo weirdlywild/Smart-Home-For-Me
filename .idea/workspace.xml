@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashbord.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+            <state relative-caret-position="3027">
+              <caret line="207" column="26" lean-forward="true" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -219,7 +219,7 @@
       <workItem from="1554015023407" duration="12239000" />
       <workItem from="1554035466213" duration="10440000" />
       <workItem from="1554052360518" duration="10326000" />
-      <workItem from="1554189654309" duration="4556000" />
+      <workItem from="1554189654309" duration="11748000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1553892301439</created>
@@ -270,11 +270,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554063255308</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final_with_backend 38%">
+      <created>1554195979945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554195979945</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42878000" />
+    <option name="totallyTimeSpent" value="50070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -311,7 +318,8 @@
     <MESSAGE value="final_with_backend 10%" />
     <MESSAGE value="final_with_backend 15%" />
     <MESSAGE value="final_with_backend 16%" />
-    <option name="LAST_COMMIT_MESSAGE" value="final_with_backend 16%" />
+    <MESSAGE value="final_with_backend 38%" />
+    <option name="LAST_COMMIT_MESSAGE" value="final_with_backend 38%" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.php" />
@@ -425,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashbord.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
+        <state relative-caret-position="3027">
+          <caret line="207" column="26" lean-forward="true" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
