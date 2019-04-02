@@ -32,85 +32,9 @@ $name = $row['name'];
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script>
-        function mainpgload(){
-            <?php //read for bedroom
-            $dbsql="SELECT * FROM bedroom";
-            $dbresult=mysqli_query($conn_device,$dbsql);
-            if(mysqli_num_rows($dbresult) > 0)
-            {
-            while($dbrow = mysqli_fetch_assoc($dbresult))
-            {
-            $dbgpio = $dbrow['gpio'];
-            system("gpio mode ".$dbgpio." out"); //set to out pin
-            $dbpin = exec("gpio read ".$dbgpio); //check pin status
-            if($dbpin == 1){
-            ?>                       document.getElementById("'<?php echo $dbgpio; ?>'").checked = false;
-            <?php              }else if($dbpin == 0){
-            ?>                      document.getElementById("'<?php echo $dbgpio; ?>'").checked = true;
-            <?php
-            }else{
-            echo "Problem in read pin(bedroom)";
-        }
-            }
-            }
-            ?>//read bedroom over
-
-            <?php //read for hall
-            $dhsql="SELECT * FROM hall";
-            $dhresult=mysqli_query($conn_device,$dhsql);
-            if(mysqli_num_rows($dhresult) > 0)
-            {
-            while($dhrow = mysqli_fetch_assoc($dhresult))
-            {
-            $dhgpio = $dhrow['gpio'];
-            system("gpio mode ".$dhgpio." out"); //set to out pin
-            $dhpin = exec("gpio read ".$dhgpio); //check pin status
-            if($dhpin == 1){
-            ?>                       document.getElementById("'<?php echo $dhgpio; ?>'").checked = false;
-            <?php              }else if($dhpin == 0){
-            ?>                      document.getElementById("'<?php echo $dhgpio; ?>'").checked = true;
-            <?php
-            }else{
-            echo "Problem in read pin(hall)";
-        }
-            }
-            }
-            ?>//read for hall over
-
-            <?php //read for kitchen
-            $dksql="SELECT * FROM kitchen";
-            $dkresult=mysqli_query($conn_device,$dksql);
-            if(mysqli_num_rows($dkresult) > 0)
-            {
-            while($dkrow = mysqli_fetch_assoc($dkresult))
-            {
-            $dkgpio = $dkrow['gpio'];
-            system("gpio mode ".$dkgpio." out"); //set to out pin
-            $dkpin = exec("gpio read ".$dkgpio); //check pin status
-            if($dkpin == 1){
-            ?>                       document.getElementById("'<?php echo $dkgpio; ?>'").checked = false;
-            <?php              }else if($dkpin == 0){
-            ?>                      document.getElementById("'<?php echo $dkgpio; ?>'").checked = true;
-            <?php
-            }else{
-            echo "Problem in read pin(kitchen)";
-        }
-            }
-            }
-            ?>//read for hall over
-    }
-
-    function cngbtn(x,p){
-        if(x === 1){
-            document.getElementById(p).checked = true;
-        }else if(x === 0){
-            document.getElementById(p).checked = false;
-        }
-    }
-</script>
+    <script src="req.js"></script>
 </head>
-<body onload="mainpgload()">
+<body>
 <div class="container-fluid h-100">
 <div class="row h-100">
     <aside class="col-12 col-md-3  p-0 ">
@@ -135,23 +59,23 @@ $name = $row['name'];
                             &nbsp
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a> <!-- profile -->
+                            <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a>
                         </li>
                         <li>&nbsp</li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_mng_dvi.php"><i class="fa fa-gears fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur" style="color:white;">MANAGE DEVICES</span></a>  <!-- manage devices -->
+                            <a class="nav-link pl-0" href="dashbord_mng_dvi.php"><i class="fa fa-gears fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur" style="color:white;">MANAGE DEVICES</span></a>
                         </li>
                         <li>&nbsp</li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_contactus.php"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a> <!-- contact us  -->
+                            <a class="nav-link pl-0" href="dashbord_contactus.php"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a>
                         </li>
                         <li>&nbsp</li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="dashbord_aboutus.php"><i class="fa fa-id-badge fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">ABOUT US</span></a> <!-- about us -->
+                            <a class="nav-link pl-0" href="dashbord_aboutus.php"><i class="fa fa-id-badge fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">ABOUT US</span></a>
                         </li>
                         <li>&nbsp</li>
                         <li class="nav-item">
-                            <a class="nav-link pl-0" href="logout.php"><i class="fa fa-power-off fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">LOG OUT</span></a> <!--log out -->
+                            <a class="nav-link pl-0" href="logout.php"><i class="fa fa-power-off fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">LOG OUT</span></a>
                         </li>
                     </ul>
                 </div>
@@ -192,7 +116,7 @@ $name = $row['name'];
                                         <td>$dbdis</td> ";
                                   ?>
                                         <td>
-                                          <input class="toggleCheck" id="'<?php echo $dbgpio; ?>'" type="checkbox" onclick="cngbtn(<?php $dbpin=system("gpio read ".$dbgpio); if($dbpin == 0){ system("gpio write ".$dbgpio." 1"); }else{ system("gpio write ".$dbgpio." 0"); } echo $dbpin; ?>,<?php echo $dbgpio; ?>);">
+                                          <input class="toggleCheck" id="'<?php echo $dbgpio; ?>'" type="checkbox" onclick="cngbtn(<?php echo $dbgpio; ?>);">
                                           <label class="toggleBtn" for="'<?php echo $dbgpio; ?>'"></label>
                                         <!--  <i id="tb" class="fa fa-toggle-on" onclick="tgl('<?php if($dbgpio == 0){ echo 0;}else{ echo 1;} ?>');"></i> -->
                                         </td>
@@ -233,7 +157,7 @@ $name = $row['name'];
                                 <td>$dhdis</td> ";
                           ?>
                                 <td>
-                                  <input class="toggleCheck" id="'<?php echo $dhgpio; ?>'" type="checkbox" onclick="cngbtn(<?php $dhpin=system("gpio read ".$dhgpio); if($dhpin == 0){ system("gpio write ".$dhgpio." 1"); }else{ system("gpio write ".$dhgpio." 0"); } echo $dhpin; ?>,<?php echo $dhgpio; ?>);">
+                                  <input class="toggleCheck" id="'<?php echo $dhgpio; ?>'" type="checkbox" onclick="cngbtn(<?php echo $dhgpio; ?>);">
                                   <label class="toggleBtn" for="'<?php echo $dhgpio; ?>'"></label>
                                 <!--  <i id="tb" class="fa fa-toggle-on" onclick="tgl('<?php echo $dhgpio; ?>');"></i> -->
                                 </td>
@@ -274,7 +198,7 @@ $name = $row['name'];
                                 <td>$dbdis</td> ";
                           ?>
                                 <td>
-                                  <input class="toggleCheck" id="'<?php echo $dkgpio; ?>'" type="checkbox" onclick="cngbtn(<?php $dkpin=system("gpio read ".$dkgpio); if($dkpin == 0){ system("gpio write ".$dkgpio." 1"); }else{ system("gpio write ".$dkgpio." 0"); } echo $dkpin; ?>,<?php echo $dkgpio; ?>);">
+                                  <input class="toggleCheck" id="'<?php echo $dkgpio; ?>'" type="checkbox" onclick="cngbtn(<?php echo $dkgpio; ?>);">
                                   <label class="toggleBtn" for="'<?php echo $dkgpio; ?>'"></label>
                                 <!--  <i id="tb" class="fa fa-toggle-on" onclick="tgl('<?php echo $dkgpio; ?>');"></i> -->
                                 </td>
@@ -293,5 +217,6 @@ $name = $row['name'];
      </main>
     </div>
 </div>
+    <?php include 'loadp.php';?>
   </body>
 </html>
