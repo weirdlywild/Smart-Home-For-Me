@@ -1,3 +1,20 @@
+<?php
+session_start();
+require_once ('dbconn.php');
+if (empty($_SESSION['email'])){
+header("Location: login.php");
+}
+$email = $_SESSION['email'];
+$sql = "SELECT * FROM main_data WHERE email= '$email'";
+$result = mysqli_query($conn , $sql);
+if(mysqli_num_rows($result) > 0)
+{
+while($row = mysqli_fetch_assoc($result))
+{
+$name = $row['name'];
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +36,7 @@
   <body>
     <div class="container-fluid h-100">
     <div class="row h-100">
-        <aside class="col-12 col-md-2  p-0 ">
+        <aside class="col-12 col-md-3  p-0 ">
             <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
                 <div class="collapse navbar-collapse">
                     <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
@@ -33,6 +50,11 @@
                           </span>
                           <li>
                             &nbsp
+                          </li>
+                          <li>
+                             <span class="ur1" style="color:white;">
+                                 &nbsp<?php echo "$name"; ?>
+                             </span>
                           </li>
                         <li class="nav-item">
                             <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a> <!-- profile -->
@@ -63,7 +85,7 @@
           <br>
 
           <h1><span class="heading">ABOUT US</span></h1>
-		 
+
 
           /* program for family tree.*/
           domains

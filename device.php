@@ -4,6 +4,8 @@
 <head>
 <title>ADD DEVICE</title>
     <link rel="stylesheet" href="css/device_style.css">
+    <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
+    <link rel="stylesheet" href="css/dashbord_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +28,7 @@
 
     <form action="device_code.php" method="post">
         <div class="slt">
-            <select  id="selcat" name="selcat" required="">
+            <select class="dropdown" id="selcat" name="selcat" required="">
                 <option value="null">Select Category</option>
                 <option value="bedroom">Bedroom</option>
                 <option value="hall">Hall</option>
@@ -54,9 +56,9 @@
             <input type="password" id="dpass" name="dpass" placeholder="Password" required="" autocomplete="off">
         </div>
         <input type="submit" id="btn" class="btn" value="Add Device" onclick="Validate()">
+    </form>
     <a href="dashbord.php">
         <button class="btn">Go Back</button></a>
-    </form>
 
 </div>
 </body>

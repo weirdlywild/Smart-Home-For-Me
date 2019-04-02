@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <title>Smart Home For Me</title>
     <link rel="stylesheet" href="css/login_style.css">
+    <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
+    <link rel="stylesheet" href="css/dashbord_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>

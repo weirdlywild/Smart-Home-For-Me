@@ -1,3 +1,20 @@
+<?php
+session_start();
+require_once ('dbconn.php');
+if (empty($_SESSION['email'])){
+header("Location: login.php");
+}
+$email = $_SESSION['email'];
+$sql = "SELECT * FROM main_data WHERE email= '$email'";
+$result = mysqli_query($conn , $sql);
+if(mysqli_num_rows($result) > 0)
+{
+while($row = mysqli_fetch_assoc($result))
+{
+$name = $row['name'];
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +36,7 @@
   <body>
     <div class="container-fluid h-100">
     <div class="row h-100">
-        <aside class="col-12 col-md-2  p-0 ">
+        <aside class="col-12 col-md-3  p-0 ">
             <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
                 <div class="collapse navbar-collapse">
                     <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
@@ -33,6 +50,11 @@
                           </span>
                           <li>
                             &nbsp
+                          </li>
+                          <li>
+                             <span class="ur1" style="color:white;">
+                                 &nbsp<?php echo "$name"; ?>
+                             </span>
                           </li>
                         <li class="nav-item">
                             <a class="nav-link pl-0" href="dashbord_profile.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">PROFILE</span></a> <!-- profile -->
@@ -63,134 +85,7 @@
           <br>
 
           <h1><span class="heading">MANAGE DEVICES</span></h1>
-          /* program for family tree.*/
-          domains
-          	person=symbol
-          predicates
-          	male(person)
-          	female(person)
-          	father(person,person)
-          	mother(person,person)
-          	grandfather(person,person)
-          	grandmother(person,person)
-          	siblings(person,person)
-          	brother(person,person)
-          	sister(person,person)
-          	son(person,person)
-          	daughter(person,person)
-          	wife(person,person)
-          	husband(person,person)
-          	uncle(person,person)
-          	aunt(person,person)
-          	cousin_brother(person,person)
-          	cousin_sister(person,person)
-          clauses
-          	male(bhikhusinh).
-          	male(harendrasinh).
-          	male(pankajbhai).
-          	male(gulabsinh).
-          	male(soham).
-          	male(ganpatsinh).
-          	male(raj).
-          	male(jigar).
-          	male(meghraj).
-          	female(jaymatiben).
-          	female(parvatiben).
-          	female(kamuben).
-          	female(bhanuben).
-          	female(divyaben).
-          	father(bhikhusinh,jaymatiben).
-          	father(bhikhusinh,harendrasinh).
-          	father(bhikhusinh,pankajbhai).
-          	father(harendrasinh,raj).
-          	father(harendrasinh,jigar).
-          	father(pankajbhai,meghraj).
-          	father(gulabsinh,soham).
-          	father(ganpatsinh,bhanuben).
-          	mother(kamuben,jaymatiben).
-          	mother(kamuben,harendrasinh).
-          	mother(kamuben,pankajbhai).
-          	mother(bhanuben,raj).
-          	mother(bhanuben,jigar).
-          	mother(divyaben,meghraj).
-          	mother(jaymatiben,soham).
-
-          	grandfather(X,Y) :-
-          male(X),
-          			father(X,Z),
-          		    	father(Z,Y).
-          	grandmother(X,Y) :-
-          			female(X),
-          			mother(X,Z),
-          			father(Z,Y).
-          	siblings(X,Y) :-
-          			father(Z,X),
-          			father(Z,Y),
-          			not(X=Y).
-          	brother(X,Y) :-
-          			male(X),
-          siblings(X,Y).
-          	sister(X,Y) :-
-          			female(X),
-          siblings(X,Y).
-          	son(X,Y) :-
-          			male(X),
-          			father(Y,X);
-          			mother(Y,X).
-          	daughter(X,Y) :-
-          			female(X),
-          			father(Y,X);
-          			mother(Y,X).
-          	wife(X,Y) :-
-          			female(X),
-          			father(Y,Z),
-          			mother(X,Z),!.
-
-          	husband(X,Y) :-
-          			male(X),
-          			father(X,Z),
-          			mother(Y,Z),!.
-
-          	uncle(X,Y):-
-          			male(X),
-          			father(Z,Y),
-          			siblings(Z,X);
-          			male(X),
-          			mother(Z,Y),
-          			siblings(Z,X);
-          			male(X),
-          			mother(Z,Y),
-          			siblings(R,Z),
-          			husband(X,R);
-          			male(X),
-          			father(Z,Y),
-          			siblings(Z,R),
-          			husband(X,R),!.
-          	aunt(X,Y) :-
-          			female(X),
-          			father(Z,Y),
-          			siblings(Z,X);
-          			female(X),
-          			mother(Z,Y),
-          			siblings(Z,X);
-          			female(X),
-          			father(Z,Y),
-          			siblings(R,Z),
-          			wife(X,R);
-          			female(X),
-          			mother(Z,Y),
-          			siblings(Z,R),
-          			wife(X,R),!.
-          cousin_brother(X,Y):-
-          				male(X),
-          				father(Z,X),
-          				uncle(Z,Y).
-          	cousin_sister(X,Y):-
-          				female(X),
-          				father(Z,X),
-          				uncle(Z,Y).
-
-     </main>
+ </main>
     </div>
 </div>
   </body>
