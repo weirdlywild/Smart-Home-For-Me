@@ -96,7 +96,7 @@ $name = $row['name'];
                 <legend style="color:white;"><spam class="leg_ti">Bed Room</spam></legend>
                     <div style="color: white; background-color: black;">
                         <?php
-                            $dbsql="SELECT * FROM bedroom";
+                            $dbsql="SELECT * FROM bedroom WHERE email='$email'";
                             $dbresult=mysqli_query($conn_device,$dbsql);
                             if(mysqli_num_rows($dbresult) > 0)
                             {
@@ -137,7 +137,7 @@ $name = $row['name'];
                 <legend style="color:white;"><spam class="leg_ti">Hall</spam></legend>
                 <div style="color: white; background-color: black;">
                     <?php
-                    $dhsql="SELECT * FROM hall";
+                    $dhsql="SELECT * FROM hall WHERE email='$email'";
                     $dhresult=mysqli_query($conn_device,$dhsql);
                     if(mysqli_num_rows($dhresult) > 0)
                     {
@@ -178,7 +178,7 @@ $name = $row['name'];
                 <legend style="color:white;"><spam class="leg_ti">Kitchen</spam></legend>
                 <div style="color: white; background-color: black;">
                     <?php
-                    $dksql="SELECT * FROM kitchen";
+                    $dksql="SELECT * FROM kitchen WHERE email='$email'";
                     $dkresult=mysqli_query($conn_device,$dksql);
                     if(mysqli_num_rows($dkresult) > 0)
                     {
