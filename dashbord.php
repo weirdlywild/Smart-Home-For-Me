@@ -126,7 +126,7 @@ $name = $row['name'];
                                 echo "</table>";
                             }else
                             {
-                                echo "No Data Available";
+                                echo "No Device Available";
                             }
                             ?>
                     </div>
@@ -167,7 +167,7 @@ $name = $row['name'];
                         echo "</table>";
                     }else
                     {
-                        echo "No Data Available";
+                        echo "No Device Available";
                     }
                     ?>
                 </div>
@@ -194,8 +194,8 @@ $name = $row['name'];
                             $dkgpio = $dkrow['gpio'];
                             echo "
                             <tr>
-                                <td>$dbname</td>
-                                <td>$dbdis</td> ";
+                                <td>$dkname</td>
+                                <td>$dkdis</td> ";
                           ?>
                                 <td>
                                   <input class="toggleCheck" id="'<?php echo $dkgpio; ?>'" type="checkbox" onclick="cngbtn(<?php echo $dkgpio; ?>);">
@@ -208,7 +208,7 @@ $name = $row['name'];
                         echo "</table>";
                     }else
                     {
-                        echo "No Data Available";
+                        echo "No Device Available";
                     }
                     ?>
                 </div>

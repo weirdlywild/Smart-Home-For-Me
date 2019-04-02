@@ -40,6 +40,18 @@ i:hover{
   color: red;
 }
 </style>
+<script>
+    /*function validateMyForm()
+    {
+        if(confirm("Are You Sure You Want To Delete This Device?"))
+        {
+            return true;
+        }else{
+            returnToPreviousPage();
+            return false;
+        }
+    }*/
+</script>
   </head>
   <body>
     <div class="container-fluid h-100">
@@ -119,8 +131,12 @@ i:hover{
                                                   <td>$dbdis</td> ";
                                             ?>
                                             <td>
-                                              <span class="dlt_hvr"><button class="bnt"><i class="material-icons">&#xe872;</i></button>
-                                            </span></td>
+                                                <form action="dashbord_mng_dvi_code.php" method="post">
+                                                    <input type="hidden" id="gpio" name="gpio" value="<?php echo $dbgpio; ?>">
+                                                    <input type="hidden" id="data" name="data" value="bedroom">
+                                                    <span class="dlt_hvr"><button type="submit" class="bnt"><i class="material-icons">&#xe872;</i></button></span>
+                                                </form>
+                                              </td>
                                               </tr>
                                               <?php
                                           }
