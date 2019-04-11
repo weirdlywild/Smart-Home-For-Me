@@ -37,12 +37,12 @@ $name = $row['name'];
 <body>
 <div class="container-fluid h-100">
 <div class="row h-100">
-    <aside class="col-12 col-md-3  p-0 ">
+    <aside class="col-12 col-md-3 col-sm-12 col-xs-12 p-0 ">
         <nav class="navbar navbar-expand flex-md-column flex-row align-items-start py-2">
             <div class="collapse navbar-collapse">
                 <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                     <li class="nav-item1 hello">
-                        <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt" style="color:white;">SMART HOME</span></a>
+                        <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt d-none d-md-inline" style="color:white;">SMART HOME</span></a>
                     </li>
                                 <div class="imgcontainer d-none d-md-inline">
                                  <img src="images/img_avatar2.png" alt="Avatar" class="avatar">

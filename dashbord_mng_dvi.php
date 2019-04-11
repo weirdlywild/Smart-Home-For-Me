@@ -61,7 +61,7 @@ i:hover{
               <div class="collapse navbar-collapse">
                   <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                       <li class="nav-item1 hello">
-                          <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt" style="color:white;">SMART HOME</span></a>
+                          <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt d-none d-md-inline" style="color:white;">SMART HOME</span></a>
                       </li>
                                   <div class="imgcontainer d-none d-md-inline">
                                    <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
@@ -174,8 +174,12 @@ i:hover{
                                           <td>$dhdis</td> ";
                                     ?>
                                     <td>
-                                    <span class="dlt_hvr">  <button class="bnt"><i class="material-icons">&#xe872;</i></button>
-                                    </span></td>
+                                      <form action="dashbord_mng_dvi_code.php" method="post">
+                                          <input type="hidden" id="gpio" name="gpio" value="<?php echo $dhgpio; ?>">
+                                          <input type="hidden" id="data" name="data" value="hall">
+                                          <span class="dlt_hvr"><button type="submit" class="bnt"><i class="material-icons">&#xe872;</i></button></span>
+                                      </form>
+                                    </td>
                                       </tr>
                                       <?php
                                   }
@@ -213,8 +217,12 @@ i:hover{
                                           <td>$dkdis</td> ";
                                     ?>
                                           <td>
-                                          <span class="dlt_hvr"><button class="bnt"><i class="material-icons">&#xe872;</i></button>
-                                          </span></td>
+                                            <form action="dashbord_mng_dvi_code.php" method="post">
+                                                <input type="hidden" id="gpio" name="gpio" value="<?php echo $dkgpio; ?>">
+                                                <input type="hidden" id="data" name="data" value="kitchen">
+                                                <span class="dlt_hvr"><button type="submit" class="bnt"><i class="material-icons">&#xe872;</i></button></span>
+                                            </form>
+                                          </td>
                                       </tr>
                                       <?php
                                   }
