@@ -14,6 +14,7 @@ while($row = mysqli_fetch_assoc($result))
 $name = $row['name'];
 }
 }
+include 'sensor.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -89,6 +90,8 @@ $name = $row['name'];
           <h1><span class="heading">Welcome To The Dashbord</span></h1>
             <div>
                 <span class="hello_l">Hello,<span> <?php echo "$name"; ?></span></span>
+                <span class="hello_l">Temp:<span> <?php echo "$stemp"; ?></span></span>
+                <span class="hello_l">HUM:<span> <?php echo "$shum"; ?></span></span>
                 <span><a href='device.php'><button class="bnt"><strong>Add Device</strong></button></a></span>
             </div>
 <div class="fdl">
