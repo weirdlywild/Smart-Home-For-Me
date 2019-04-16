@@ -38,7 +38,7 @@ $phone =$row['phone'];
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <div class="container-fluid h-100">
     <div class="row h-100">
       <aside class="col-12 col-md-3  p-0 ">
@@ -90,13 +90,13 @@ $phone =$row['phone'];
           <br>
           <br>
 <div>
-          <h1><span class="heading">EDIT PROFILE</span></h1>
+          <h1 class="heading1"><span class="heading">EDIT PROFILE</span></h1>
 </div>
 <div>
 <span><a href='change_pass.php'><button class="bnt flt_r"><strong>Change Password</strong></button></a></span>
 </div>
 <br/>
-<div>
+<div class="container">
       <form class="f_p" action="dashbord_profile_code.php" method="post">
         <div><input type="text" id="txtname" name="txtname" class="text_box" placeholder="<?php echo "$name"; ?>" value="<?php echo "$name"; ?>"></div>
       <div><input type="text" id="txtemail" name="txtemail" class="text_box dis" placeholder="<?php echo "$email"; ?>" disabled></div>
