@@ -1,0 +1,180 @@
+body {
+	background: black;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+
+.widget{
+
+	transform: translate(-50%, -50%);
+<!--  border: 6px solid #171A16; -->
+  border-radius: 20px;
+
+}
+
+.weatherIcon{
+	background-color: black;
+	height: 70%;
+	width: 100%;
+	position: absolute;
+    left: 0;
+	top: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.weatherIcon:before{
+	display: block;
+	content:"\f002";
+	color: #4caf50;
+	font-family: weathericons;
+	font-size: 95px;
+	position: absolute;
+	left: 50%;
+	top: 58%;
+	transform: translate(-50%, -50%);
+}
+
+.weatherData {
+	background-color: #181818;
+	height: 30%;
+	width: 100%;
+	position: absolute;
+    left: 0;
+	bottom: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+h2 {
+	color: #8f9b9d;
+	font-family: 'Open Sans';
+  font-weight: 200;
+	font-size: 1.1875em;
+	line-height: 1.1875em;
+	position: absolute;
+	top: 10%;
+	left: 27%;
+}
+
+h3 {
+	color: #c5cdcf;
+	font-family: 'Open Sans';
+  font-weight: 400;
+	font-size: 0.8125em;
+	line-height: 0.8125em;
+	position: absolute;
+	bottom: 25%;
+	left: 27%;
+}
+
+h4 {
+	color: #fff;
+	font-family: 'Open Sans';
+  font-weight: 700;
+	font-size: 1em;
+	line-height: 1em;
+	position: absolute;
+
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+h5 {
+	color: #fff;
+	font-family: 'Open Sans';
+  font-weight: 500;
+	font-size: 30px;
+	line-height: 1em;
+	position: absolute;
+	bottom: 1%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.date {
+	background-color: #4caf50;;
+	height: 30%;
+	width: 22%;
+	position: absolute;
+    right: 0;
+	bottom: 0;
+  opacity: 50%;
+	border-bottom-right-radius: 10px;
+}
+@media screen and (min-width: 721px){
+	.widget{
+		margin-top: 20%;
+		margin-left: 50%;
+		width: 400px;
+		height: 250px;
+	}
+	.temperature{
+		color: #c5cdcf;
+		font-family: 'Open Sans';
+	  font-weight: 200;
+		font-size: 30px;
+ 		position: absolute;
+		left: 6%;
+		top: 10%;
+		bo
+		transform: translate(0, -50%);
+	}
+.gas_sta{
+	border: 2px solid #4caf50;
+	background: none;
+	color: white;
+margin-bottom: 20px;
+	margin-top: 50px;
+	border-radius: 5px;
+	font-size: 25px;
+	float: right;
+	margin-right: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+}
+.nor{
+	color: green;
+}
+.sus{
+	color: yellow;
+}
+.risk{
+	color: red;
+}
+@media screen and (max-width: 720px){
+	.widget{
+		margin-top: 55%;
+		margin-left: 50%;
+		width: 150px;
+		height: 125px;
+	}
+	h1.temperature{
+		font-weight: 200;
+		margin-left: 20px;
+		font-size: 25px;
+		color: #c5cdcf;
+		font-family: 'Open Sans';
+		transform: translate(0, -50%);
+		top: 10%;
+	}
+	.gas_sta{
+		border: 2px solid #4caf50;
+		background: none;
+		color: white;
+	margin-bottom: 20px;
+		margin-top: 50px;
+		border-radius: 5px;
+		font-size: 25px;
+		float: right;
+		margin-right: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

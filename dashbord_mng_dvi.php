@@ -101,9 +101,9 @@ i:hover{
           </nav>
       </aside>
         <main class="col next">
-          <br>
-          <br>
-          <br>
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
 
           <h1><span class="heading">MANAGE DEVICES</span></h1>
           <div class="fdl">

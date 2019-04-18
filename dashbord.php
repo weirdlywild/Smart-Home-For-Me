@@ -25,6 +25,9 @@ include 'sensor.php';
     <title>Dashbord</title>
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
     <link rel="stylesheet" href="css/dashbord_style.css">
+    <link rel="stylesheet" href="css/weather_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" />
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -96,18 +99,33 @@ include 'sensor.php';
             </nav>
         </aside>
         <main class="col next">
-          <br>
-          <br>
-          <br>
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
 
           <h1><span class="heading">Welcome To The Dashbord</span></h1>
             <div>
                 <span class="hello_l">Hello,<span> <?php echo "$name"; ?></span></span>
-                <span class="hello_l">Temp:<span> <?php echo "$stemp"; ?></span></span>
-                <span class="hello_l">HUM:<span> <?php echo "$shum"; ?></span></span>
-                <span class="hello_l">GAS:<span> <?php echo "$svgas"; ?></span></span>
                 <span><a href='device.php'><button class="bnt"><strong>Add Device</strong></button></a></span>
+                <article class="widget">
+                <div class="weatherIcon"></div>
+                <div class="weatherData">
+                  <h1 class="temperature"><?php echo "$stemp"; ?>&deg; &#67;</h1>
+                  <h2 class="description d-none d-md-inline">Partly Cloudy</h2>
+                </div>
+                <div class="date d-none d-md-inline">
+                  <h4 class="month">Humidity</h4>
+                  <h5 class="day"><?php echo "$shum"; ?> &#37;</h5>
+                </div>
+              </article>
+
+                <!--  <span class="hello_l">Temp:<span> </span></span>
+                <span class="hello_l">HUM:<span> </span></span>
+                <span class="hello_l">GAS:<span </span></span> -->
             </div>
+          <div class="gas_sta">
+          <span>  GAS Status: <?php if($svgas==0) echo "<span class='nor'>Normal</span>"; else if($svgas==1)  echo "<span>Suspicious</span>"; else  if($svgas==2) echo"<span>Risk</span>"; ?></span>
+          </div>
 <div class="fdl">
             <fieldset class="col-md-12">
                 <legend style="color:white;"><spam class="leg_ti">Bed Room</spam></legend>

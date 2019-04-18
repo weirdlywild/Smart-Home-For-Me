@@ -81,9 +81,9 @@ $name = $row['name'];
           </nav>
       </aside>
         <main class="col next">
-          <br>
-          <br>
-          <br>
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
 
           <h1><span class="heading">CONTACT US</span></h1>
           /* program for family tree.*/

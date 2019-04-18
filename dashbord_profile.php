@@ -86,6 +86,9 @@ $phone =$row['phone'];
           </nav>
       </aside>
         <main class="col next">
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
+          <br class="d-none d-md-inline">
           <div class="head_h1">
               <h1 class="heading1"><span class="heading">EDIT PROFILE</span></h1>
           </div>

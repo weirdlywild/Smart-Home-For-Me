@@ -5,7 +5,6 @@ body,html {
   body{
     background: #000000;
     color: #ffffff;
-
   }
   aside, .navbar{
     background-color: #000000;
@@ -24,16 +23,7 @@ li{
 .ur1{
   margin-left: 22%;
 }
-.hello_l{
-  float: left;
-  background: none;
-  color: white;
-  margin-bottom: 20px;
-  margin-top: 50px;
-  border-radius: 5px;
-  font-size: 25px;
 
-}
 .ur:hover{
   border-bottom: 4px solid #4caf50;
 }
@@ -76,24 +66,11 @@ legend
   border-bottom: 3px solid #4caf50 !important;
   padding-left: 15px;
 }
-.fdl{
-margin-top: 20px;
-}
 .leg_ti{
   margin-left: 15px;
   font-size:24px;
 }
-.bnt{
-  border: 2px solid #4caf50;
-  background: none;
-  color: white;
-margin-bottom: 20px;
-  margin-top: 50px;
-  border-radius: 5px;
-  font-size: 25px;
-  float: right;
-  margin-right: 50px;
-}
+
 table{
 /*border: 1px solid #ffffff;
   */width: 100%;
@@ -138,12 +115,47 @@ td{
   .heading{
     font-size: 55px;
   }
-  
+  .hello_l{
+    float: left;
+    background: none;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    border-radius: 5px;
+    font-size: 40px;
+  }
+  .bnt{
+    border: 2px solid #4caf50;
+    background: none;
+    color: white;
+  margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 25px;
+    float: right;
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .heading{
     font-size: 30px;
   }
-
+  .hello_l{
+    float: left;
+    background: none;
+    color: white;
+    margin-top: 80px;
+    border-radius: 5px;
+    font-size: 40px;
+  }
+  .bnt{
+    border: 2px solid #4caf50;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 80px;
+    font-size: 25px;
+    float: right;
+  }
 }

@@ -18,7 +18,6 @@ $npass=md5($npwd);
 
 
 $sql = "UPDATE `main_data` SET `password` = '$npass' WHERE `main_data`.`email` = '$email' AND `password` = '$opass'";
-
 $result = mysqli_query($conn , $sql);
 if($result === TRUE)
 {
