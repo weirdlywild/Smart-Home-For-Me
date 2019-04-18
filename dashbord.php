@@ -19,7 +19,7 @@ include 'sensor.php';
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashbord</title>
@@ -34,6 +34,19 @@ include 'sensor.php';
    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="req.js"></script>
+    <script>
+    $(window).load(function() {
+      setTimeout(function() {
+        Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
+      }, 1500);
+      setTimeout(function() {
+        Materialize.toast('<span>You can swipe me too!</span>', 3000);
+      }, 5000);
+      setTimeout(function() {
+        Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
+      }, 15000);
+    });
+    </script>
 </head>
 <body>
 <div class="container-fluid h-100">
@@ -92,6 +105,7 @@ include 'sensor.php';
                 <span class="hello_l">Hello,<span> <?php echo "$name"; ?></span></span>
                 <span class="hello_l">Temp:<span> <?php echo "$stemp"; ?></span></span>
                 <span class="hello_l">HUM:<span> <?php echo "$shum"; ?></span></span>
+                <span class="hello_l">GAS:<span> <?php echo "$svgas"; ?></span></span>
                 <span><a href='device.php'><button class="bnt"><strong>Add Device</strong></button></a></span>
             </div>
 <div class="fdl">

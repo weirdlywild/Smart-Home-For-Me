@@ -20,7 +20,7 @@ $phone =$row['phone'];
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PROFILE</title>
@@ -86,24 +86,24 @@ $phone =$row['phone'];
           </nav>
       </aside>
         <main class="col next">
-          <br>
-          <br>
-          <br>
+          <div class="head_h1">
+              <h1 class="heading1"><span class="heading">EDIT PROFILE</span></h1>
+          </div>
+
+          <div>
+              <span><a href='change_pass.php'><button class="bnt flt_r"><strong>Change Password</strong></button></a></span>
+          </div>
+<div <div class="col-sm-1-12">
+
 <div>
-          <h1 class="heading1"><span class="heading">EDIT PROFILE</span></h1>
-</div>
-<div>
-<span><a href='change_pass.php'><button class="bnt flt_r"><strong>Change Password</strong></button></a></span>
-</div>
-<br/>
-<div class="container">
       <form class="f_p" action="dashbord_profile_code.php" method="post">
         <div><input type="text" id="txtname" name="txtname" class="text_box" placeholder="<?php echo "$name"; ?>" value="<?php echo "$name"; ?>"></div>
       <div><input type="text" id="txtemail" name="txtemail" class="text_box dis" placeholder="<?php echo "$email"; ?>" disabled></div>
       <div><input type="tel" id="txtmobile" name="txtmobile" class="text_box" placeholder="<?php echo "$phone"; ?>" value="<?php echo "$phone"; ?>"></div>
       <div><input type="password" id="pass" name="pass" class="text_box" placeholder="Enter Your Password"></div>
-      <div><input type="submit" id="btnsub" class="bnt mg_btn" value="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Submit Changes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"></div>
+      <div><input type="submit" id="btnsub" class="bnt mg_btn" value="Submit Changes"></div>
       </form>
+</div>
 </div>
      </main>
     </div>

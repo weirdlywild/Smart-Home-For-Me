@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
 <title>Change Password</title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/device_style.css">
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
     <link rel="stylesheet" href="css/dashbord_style.css">

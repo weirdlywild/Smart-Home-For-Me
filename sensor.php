@@ -9,6 +9,7 @@ if(mysqli_num_rows($sresult) > 0)
   while ($row = mysqli_fetch_assoc($sresult)) {
     $stemp=$row['temp'];
     $shum=$row['hum'];
+    $svgas=$row['vgas'];
   }
 }
 ?>
