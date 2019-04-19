@@ -5,6 +5,11 @@
  * Date: 15-03-2019
  * Time: 11:15 AM
  */
+ session_start();
+ require_once ('dbconn.php');
+ if (!empty($_SESSION['email'])){
+ header("Location: dashbord.php");
+ }
 ?>
 <!DOCTYPE html>
 <html lang="en">

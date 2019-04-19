@@ -21,6 +21,7 @@ include 'sensor.php';
   <head>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="20"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashbord</title>
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
@@ -37,20 +38,14 @@ include 'sensor.php';
    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="req.js"></script>
-    <script>
-    $(window).load(function() {
-      setTimeout(function() {
-        Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
-      }, 1500);
-      setTimeout(function() {
-        Materialize.toast('<span>You can swipe me too!</span>', 3000);
-      }, 5000);
-      setTimeout(function() {
-        Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
-      }, 15000);
-    });
-    </script>
-</head>
+<!--    <script>
+    function timedRefresh(timeoutPeriod) {
+setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+window.onload = timedRefresh(5000);
+    </script> -->
+    </head>
 <body>
 <div class="container-fluid h-100">
 <div class="row h-100">
@@ -120,7 +115,7 @@ include 'sensor.php';
               </article>
             </div>
           <div class="gas_sta">
-          <span>  GAS Status: <?php if($svgas==0) echo "<span class='nor'>Normal</span>"; else if($svgas==1)  echo "<span>Suspicious</span>"; else  if($svgas==2) echo"<span>Risk</span>"; ?></span>
+          <span>  GAS Status: <?php if($svgas==0) echo "<span class='nor'>Normal</span>"; else if($svgas==1)  echo "<span class='sus'>Suspicious</span>"; else  if($svgas==2) echo"<span class='risk'>Risk</span>"; ?></span>
           </div>
 <div class="fdl">
             <fieldset class="col-md-12">
