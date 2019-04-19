@@ -5,7 +5,19 @@
  * Date: 18-03-2019
  * Time: 01:22 AM
  */
-require_once ('dbconn.php');
+ use PHPMailer\PHPMailer\PHPMailer;
+ require_once ('dbconn.php');
+ require 'PHPMailer/vendor/autoload.php';
+ $mail = new PHPMailer;
+ $mail->isSMTP();
+ $mail->SMTPAuth = true;
+ $mail->SMTPSecure = 'tls';
+ $mail->Host = 'tls://smtp.gmail.com:587';
+ $mail->isHTML();
+ $mail->Username = "solankiraj10897@gmail.com";
+ $mail->Password = "740524374910897";
+ $mail->setFrom('no-reply@smarthomefor.me');
+
 if(isset($_POST['txtname']) && isset($_POST['txtemail']) && isset($_POST['txtmobile']) && isset($_POST['pass'])){
   $name = $_POST['txtname'];
   $email = $_POST['txtemail'];
@@ -53,7 +65,7 @@ else
         $verificationLink = "http://localhost/Smart-Home-For-Me/activate.php?code=" . $verificationCode;
 
         $htmlStr = "";
-        $htmlStr .= "Hi " . $email . ",<br /><br />";
+        $htmlStr .= "Hi " . $name . ",<br /><br />";
 
         $htmlStr .= "Please click the button below to verify your subscription and have access to the download center.<br /><br /><br />";
         $htmlStr .= "<a href='{$verificationLink}' target='_blank' style='padding:1em; font-weight:bold; background-color:blue; color:#fff;'>VERIFY EMAIL</a><br /><br /><br />";
@@ -62,20 +74,22 @@ else
         $htmlStr .= "<a href='http://localhost/Smart-Home-For-Me/' target='_blank'>The Code of a Ninja</a><br />";
 
 
-        $ename = "SmatHomeForMe";
-        $email_sender = "pruthvipatel2807@gmail.com";
-        $subject = "Verification Link | The Code Of A Ninja | Subscription";
-        $recipient_email = $email;
+        //$ename = "SmatHomeForMe";
+        //$email_sender = "pruthvipatel2807@gmail.com";
+        $mail->Subject = 'Verification Link | The Code Of A Ninja | Subscription';
+        //$recipient_email = $email;
 
-        $headers  = "MIME-Version: 1.0\r\n";
-        $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-        $headers .= "From: {$ename} <{$email_sender}> \n";
+        //$headers  = "MIME-Version: 1.0\r\n";
+        //$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+        //$headers .= "From: {$ename} <{$email_sender}> \n";
 
-        $body = $htmlStr;
-
+        $mail->Body = $htmlStr;
+        $mail->addAddress($email, $name);
         // send email using the mail function, you can also use php mailer library if you want
-        if( mail($recipient_email, $subject, $body, $headers) ){
-
+        if (!$mail->send()){
+          echo "Mailer Error: " . $mail->ErrorInfo;
+          die("Sending failed.");
+        }else{
           // tell the user a verification email were sent
           echo "<div id='successMessage'>A verification email were sent to <b>" . $email . "</b>, please open your email inbox and click the given link so you can login.</div>";
 
@@ -96,9 +110,17 @@ else
             echo "<div>Unable to save your email to the database.";
             //print_r($stmt->errorInfo());
           }
-        }else{
-          die("Sending failed.");
         }
       }
     }
+    function save_mail($mail)
+{
+    //You can change 'Sent Mail' to any other folder or tag
+    $path = "{imap.gmail.com:993/imap/ssl}[Gmail]/Sent Mail";
+    //Tell your server to open an IMAP connection using the same username and password as you used for SMTP
+    $imapStream = imap_open($path, $mail->Username, $mail->Password);
+    $result = imap_append($imapStream, $path, $mail->getSentMIMEMessage());
+    imap_close($imapStream);
+    return $result;
+}
 ?>
