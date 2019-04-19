@@ -313,7 +313,7 @@
 <div :class="['container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="app">
   <div class="team-container">
     <div class="header">
-    <a href="dashbord.php"><span class="head_i"><h2 class="header-title">Our Team</h2></span></a>
+    <a href="dashbord.php" style="text-decoration:none"><span class="head_i"><h2 class="header-title">Our Team</h2></span></a>
     </div>
     <div class="person-list">
       <div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)"><img class="person-img" :src="person.photo">
