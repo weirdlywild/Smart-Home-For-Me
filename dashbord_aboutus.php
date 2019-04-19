@@ -355,7 +355,7 @@
 const persons = [
   {
     name: "Raj Solanki",
-    photo: "/images/about/raj.jpg",
+    photo: "images/about/raj.jpg",
     title: "Full Stack Devloper",
     bio:
       "<p></p>",
@@ -368,7 +368,7 @@ const persons = [
   },
   {
     name: "Pruthvi Patel",
-    photo: "/images/about/pruthvi_1.jpg",
+    photo: "images/about/pruthvi_1.jpg",
     title: "Full Stack Devloper",
     bio:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
@@ -381,7 +381,7 @@ const persons = [
   },
   {
     name: "Jainam Sutariya",
-    photo: "/images/about/jainam.jpg",
+    photo: "images/about/jainam.jpg",
     title: "UI Designer",
     bio:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
@@ -394,7 +394,7 @@ const persons = [
   },
   {
     name: "Ravi Patel",
-    photo: "/images/about/ravi.jpg",
+    photo: "images/about/ravi.jpg",
     title: "QA Engineer",
     bio:
       "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",

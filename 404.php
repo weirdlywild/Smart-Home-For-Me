@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="{CSS RESET CHOICE}">
   <style>
 	body{
-  background-color: black;
+  background-color: #282828;
   color: white;
   font-family: Sans-Serif; 
   padding: 2%;

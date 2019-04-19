@@ -7,7 +7,7 @@
 #ErrorDocument 403 /403.php
 #Forbidden
 
-ErrorDocument 404 localhost/404.php
+ErrorDocument 404 http://localhost/Smart-Home-For-Me/404.php
 
-ErrorDocument 500 localhost/500.php
+ErrorDocument 505 http://localhost/Smart-Home-For-Me/500.php
 #Internal Server Error
