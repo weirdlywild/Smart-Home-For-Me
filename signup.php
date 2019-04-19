@@ -43,7 +43,7 @@
 <body>
 <div class="container">
     <h1>SIGN UP</h1>
-    <form action="signup_code.php" method="post">
+    <form action="signup_code_email.php" method="post">
         <div class="textbox">
             <i class="fas fa-user"></i>
             <input type="text" id="txtname" name="txtname" placeholder="Name" required="" autocomplete="on" autofocus>

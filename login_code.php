@@ -13,7 +13,7 @@ $email = $_POST['txtemail'];
 $pwd = $_POST['pass'];
 $pass = md5($pwd);
 
-$sql = "SELECT * FROM main_data WHERE email = '$email' AND password='$pass'";
+$sql = "SELECT * FROM main_data WHERE email = '$email' AND password='$pass' AND verified = '1'";
 
 $result = mysqli_query($conn , $sql);
 
@@ -29,6 +29,6 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-    echo "Invalid Username or password";
+    echo "Invalid Username or password or Email Verification undone";
 }
 ?>
