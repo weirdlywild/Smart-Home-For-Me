@@ -118,10 +118,6 @@ include 'sensor.php';
                   <h5 class="day"><?php echo "$shum"; ?> &#37;</h5>
                 </div>
               </article>
-
-                <!--  <span class="hello_l">Temp:<span> </span></span>
-                <span class="hello_l">HUM:<span> </span></span>
-                <span class="hello_l">GAS:<span </span></span> -->
             </div>
           <div class="gas_sta">
           <span>  GAS Status: <?php if($svgas==0) echo "<span class='nor'>Normal</span>"; else if($svgas==1)  echo "<span>Suspicious</span>"; else  if($svgas==2) echo"<span>Risk</span>"; ?></span>
@@ -139,6 +135,7 @@ include 'sensor.php';
                               <tr>
                                   <th>Device Name</th>
                                   <th>Device Description</th>
+                                  <th>Device Status</th>
                               </tr>";
                                 while($dbrow = mysqli_fetch_assoc($dbresult))
                                 {
@@ -180,6 +177,7 @@ include 'sensor.php';
                       <tr>
                           <th>Device Name</th>
                           <th>Device Description</th>
+                          <th>Device Status</th>
                       </tr>";
                         while($dhrow = mysqli_fetch_assoc($dhresult))
                         {
@@ -221,6 +219,7 @@ include 'sensor.php';
                       <tr>
                           <th>Device Name</th>
                           <th>Device Description</th>
+                          <th>Device Status</th>
                       </tr>";
                         while($dkrow = mysqli_fetch_assoc($dkresult))
                         {

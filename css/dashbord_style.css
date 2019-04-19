@@ -3,19 +3,14 @@ body,html {
       font-family: sans-serif;
     }
   body{
-    background: #000000;
+    background: #282828;
     color: #ffffff;
   }
   aside, .navbar{
-    background-color: #000000;
-}
-.hello{
-  font-size: 26px;
-  line-height: 1;
-  color: #fff;
+    background-color: #282828;
 }
 main{
-  background-color: #000000;
+  background-color: #282828;
 }
 li{
   font-size: 20px;
@@ -56,13 +51,13 @@ border: 3px solid #4caf50 !important;
 xmin-width: 0;
 padding: 10px;
 border-radius:4px;
-background-color:#000000;
+background-color:#282828;
 border-bottom: 3px solid #4caf50;
 }
 
 legend
 {
-  background-color: #000000;
+  background-color: #282828;
   border-bottom: 3px solid #4caf50 !important;
   padding-left: 15px;
 }
@@ -75,9 +70,11 @@ table{
 /*border: 1px solid #ffffff;
   */width: 100%;
   margin-bottom: 15px;
+  background: #282828;
 }
-td{
+td,th{
   font-size: 20px;
+  background: #282828;
 }
 .fa-toggle-on{
   color: green;
@@ -119,7 +116,6 @@ td{
     float: left;
     background: none;
     color: white;
-    margin-bottom: 20px;
     margin-top: 80px;
     border-radius: 5px;
     font-size: 40px;

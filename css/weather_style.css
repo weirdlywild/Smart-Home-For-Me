@@ -1,5 +1,5 @@
 body {
-	background: black;
+	background: #282828;
 	font-size: 18px;
 }
 
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .weatherIcon{
-	background-color: black;
+	background-color: #282828;
 	height: 70%;
 	width: 100%;
 	position: absolute;
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .weatherData {
-	background-color: #181818;
+	background-color: #202828;
 	height: 30%;
 	width: 100%;
 	position: absolute;
