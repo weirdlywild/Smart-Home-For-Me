@@ -21,7 +21,7 @@ $sql = "UPDATE `main_data` SET `password` = '$npass' WHERE `main_data`.`email` =
 $result = mysqli_query($conn , $sql);
 if($result === TRUE)
 {
-    header("Location: change_pass.php");
+    header("Location: dashbord_profile.php");
 }
 else
 {
