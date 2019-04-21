@@ -52,7 +52,7 @@ $name = $row['name'];
               <div class="collapse navbar-collapse">
                   <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                       <li class="nav-item1 hello">
-                          <a class="nav-link pl-0 text-nowrap" href="dashbord.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt d-none d-md-inline" style="color:white;">SMART HOME</span></a>
+                          <a class="nav-link pl-0 text-nowrap" href="verify.php"><i class="fa fa-home fa-fw" style="color:white;"></i> <span class="font-weight-bold logo logo__txt d-none d-md-inline" style="color:white;">SMART HOME</span></a>
                       </li>
                                   <div class="imgcontainer d-none d-md-inline">
                                    <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
@@ -69,23 +69,23 @@ $name = $row['name'];
                           &nbsp
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="#"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">EDIT PROFILE</span></a> <!-- profile -->
+                          <a class="nav-link pl-0" href="verify.php"><i class="fa fa-user-circle-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">EDIT PROFILE</span></a> <!-- profile -->
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="#"><i class="fa fa-gears fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur" style="color:white;">MANAGE DEVICES</span></a>  <!-- manage devices -->
+                          <a class="nav-link pl-0" href="verify.php"><i class="fa fa-gears fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur" style="color:white;">MANAGE DEVICES</span></a>  <!-- manage devices -->
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="#"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a> <!-- contact us  -->
+                          <a class="nav-link pl-0" href="verify.php"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a> <!-- contact us  -->
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="#"><i class="fa fa-id-badge fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">ABOUT US</span></a> <!-- about us -->
+                          <a class="nav-link pl-0" href="dashbord_aboutus.php"><i class="fa fa-id-badge fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">ABOUT US</span></a> <!-- about us -->
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="#"><i class="fa fa-power-off fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">LOG OUT</span></a> <!--log out -->
+                          <a class="nav-link pl-0" href="login.php"><i class="fa fa-power-off fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">LOG OUT</span></a> <!--log out -->
                       </li>
                   </ul>
               </div>
