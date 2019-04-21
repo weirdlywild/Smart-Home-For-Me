@@ -9,6 +9,7 @@ aside, .navbar{
 }
 main{
 background-color: #282828;
+height: 100%;
 }
 li{
 font-size: 20px;
@@ -43,12 +44,11 @@ color: white;
 .under{
 }
 .textbox{
-    width: 300px;
     overflow: hidden;
     font-size: 20px;
     padding: 8px 0;
     margin: 8px 0;
-    border-bottom: 1px solid #4caf50;
+    border-bottom: 2px solid #4caf50;
 }
 .textbox i{
     width: 26px;
@@ -63,17 +63,22 @@ color: white;
     color: white;
     font-size: 18px;
     width: 80%;
-    float: left;
     margin: 0 10px;
 }
 textarea{
   border: none;
   outline: none;
   color: white;
-  font-size: 20px;
-  float: left;
-  margin: 0 10px;
+  font-size: 16px;
   background: none;
+  margin-bottom: 100px;
+}
+.ll{
+  color: azure;
+  font-size: 18px;
+}
+h5{
+  border-bottom: 3px solid #4caf50;
 }
 @media screen and (min-width: 601px) {
 .contact_head
@@ -87,11 +92,12 @@ textarea{
         border: 2px solid #4caf50;
         background: none;
         color: white;
-      margin-bottom: 20px;
         border-radius: 5px;
         font-size: 25px;
-        float: right;
-        margin-right: 20%;
+        float: left;
+        margin-top: 50px;
+        width: 100%;
+        margin-bottom: 20%;
       }
       .hell{
         color: azure;
@@ -105,10 +111,15 @@ textarea{
         margin-right: 5%;
       }
       iframe{
-        height: 375px;
-        width: 650px;
+        height: 455px;
+        width: 675px;
       }
-
+      .textbox{
+        width: 300px;
+      }
+      textarea{
+        width: 90%;
+      }
 
 }
 
@@ -125,18 +136,32 @@ textarea{
         background: none;
         color: white;
         border-radius: 5px;
-        font-size: 20px;
-        float: right;
+        font-size: 25px;
+        float: left;
+        margin-top: 50px;
+        width: 100%;
+        margin-bottom: 20%;
       }
       .hell{
         color: azure;
         margin-bottom: 20px;
       }
+      .textbox{
+        width:100%;
+      }
       .edit{
 
       }
       .nak{
-        
-      }
 
+      }
+      textarea{
+        float: right;
+        width: 90%;
+      }
+      iframe{
+          width: 100%;
+          height: 300px;
+          margin-bottom: 50px;
+      }
 }

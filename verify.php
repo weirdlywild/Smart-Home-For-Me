@@ -77,7 +77,7 @@ $name = $row['name'];
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">
-                          <a class="nav-link pl-0" href="verify.php"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a> <!-- contact us  -->
+                          <a class="nav-link pl-0" href="dashbord_contactus.php"><i class="fa fa-vcard-o fa-fw"style="color:white;"></i>&nbsp<span class="d-none d-md-inline ur"style="color:white;">CONTACT US</span></a> <!-- contact us  -->
                       </li>
                       <li>&nbsp</li>
                       <li class="nav-item">

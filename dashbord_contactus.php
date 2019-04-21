@@ -109,10 +109,10 @@ $name = $row['name'];
 
                 <div class="textbox">
                     <i class="fa fa-edit"></i>
-                    <textarea rows="5"></textarea>
+                    <textarea rows="5" placeholder="Write Here..."></textarea>
                 </div>
-                <div>
-                <input type="submit" class="bnt">
+                <div class="btn_cent">
+                <input type="submit" class="bnt" value="Send">
               </div>
                 </form>
               </div>
@@ -123,6 +123,36 @@ $name = $row['name'];
                 <iframe src="https://maps.google.com/maps?q=svmit%20bharuch&t=&z=13&ie=UTF8&iwloc=&output=embed" scrolling="no"></iframe>
               </div>
           </div>
+          <br>
+          <br>
+          <div class="col-md-12 row ll">
+          <div class="col-md-4">
+                    <div class="c-info">
+                       <h5>Address:</h5>
+                       <p> Shree S'Ad Vidya Mandal Institute Of Technology, Old NH 48, Bharuch, Gujarat 392001 </p>
+                    </div>
+                    <br class="d-none d-lg-inlie"/>
+          </div>
+          <br class="d-none d-lg-inlie"/>
+          <div class="col-md-4">
+                    <div class="c-info">
+                       <h5>Contact:</h5>
+                       <p><strong>Phone:</strong> +91 740-5243-749</p>
+                       <p><strong>Fax:</strong> +91 991-3828-798</p>
+                    </div>
+                    <br class="d-none d-lg-inlie"/>
+          </div>
+          <br class="d-none d-lg-inlie"/>
+          <div class="col-md-4">
+                    <div class="c-info">
+                       <h5>For More Information:</h5>
+                        <p><strong>Email:</strong></p>
+                        <email>1)    ravipatel597288@gmail.com</email>
+                       <p>2)    jainamsutariya24@gmail.com</p>
+                    </div>
+                    <br class="d-none d-lg-inlie"/>
+          </div>
+        </div>
         </div>
         </main>
     </div>

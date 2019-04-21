@@ -39,7 +39,7 @@
         <form action="login_code.php" method="post">
             <div class="textbox">
                 <i class="fas fa-user"></i>
-                <input type="email" id="txtemail" name="txtemail" placeholder="Email Id">
+                <input type="email" id="txtemail" name="txtemail" placeholder="Email Id" autofocus>
             </div>
             <div class="textbox">
                 <i class="fas fa-lock"></i>
