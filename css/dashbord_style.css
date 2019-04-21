@@ -108,7 +108,11 @@ td,th{
   background: black;
   transition: 240ms;
 }
+.hello{
+  font-size: 25px;
+  line-height: 1;
 
+}
 .toggleCheck:checked + .toggleBtn { background: green; }
 .toggleCheck:checked + .toggleBtn::after { transform: translateX(100%); }
 @media screen and (min-width: 601px) {
