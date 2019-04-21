@@ -1,3 +1,10 @@
+<?php
+session_start();
+require_once ('dbconn.php');
+if (empty($_SESSION['email'])){
+    header("Location: login.php");
+}
+?>
 <html>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">

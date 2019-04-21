@@ -91,7 +91,7 @@ else
           die("Sending failed.");
         }else{
           // tell the user a verification email were sent
-          echo "<div id='successMessage'>A verification email were sent to <b>" . $email . "</b>, please open your email inbox and click the given link so you can login.</div>";
+          //echo "<!-- <div id='successMessage'>A verification email were sent to <b>" . $email . "</b>, please open your email inbox and click the given link so you can login.</div>";-->
 
 
           // save the email in the database
