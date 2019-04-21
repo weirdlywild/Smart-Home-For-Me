@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 html {
     height:90%;
+    font-family: sans-serif;
 }
 body{
     margin: 0;

@@ -1,0 +1,167 @@
+html{
+  background: #282828;
+  color: #ffffff;
+  height: 100%;
+  font-family: sans-serif;
+}
+aside, .navbar{
+  background-color: #282828;
+}
+main{
+background-color: #282828;
+height: 100%;
+}
+li{
+font-size: 20px;
+}
+.ur1{
+margin-left: 22%;
+}
+.ur:hover{
+border-bottom: 4px solid #4caf50;
+}
+.logo:hover{
+border-bottom: 6px solid #4caf50;
+}
+.imgcontainer{
+margin-left: 5%;
+}
+img.avatar {
+  width: 50%;
+  border-radius: 50%;
+}
+h1{
+margin-bottom: 50px;
+padding: 13px 0;
+margin-top: 50px;
+text-align: center;
+color: white;
+}
+.hello{
+  font-size: 25px;
+  line-height: 1;
+}
+.under{
+}
+.textbox{
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 2px solid #4caf50;
+}
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+    color: azure;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 10px;
+}
+textarea{
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  background: none;
+  margin-bottom: 100px;
+}
+.ll{
+  color: azure;
+  font-size: 18px;
+}
+h5{
+  border-bottom: 3px solid #4caf50;
+}
+@media screen and (min-width: 601px) {
+.contact_head
+      {
+        margin-top: 10%;
+        font-size: 60px;
+        margin-bottom: 7%;
+        border-bottom: 6px solid #4caf50;
+      }
+      .bnt{
+        border: 2px solid #4caf50;
+        background: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 25px;
+        float: left;
+        margin-top: 50px;
+        width: 100%;
+        margin-bottom: 20%;
+      }
+      .hell{
+        color: azure;
+        margin-bottom: 5%;
+      }
+      .edit{
+        float:left;
+      }
+      .nak{
+        float:right;
+        margin-right: 5%;
+      }
+      iframe{
+        height: 455px;
+        width: 675px;
+      }
+      .textbox{
+        width: 300px;
+      }
+      textarea{
+        width: 90%;
+      }
+
+}
+
+@media screen and (max-width: 600px) {
+.contact_head
+      {
+        margin-top: 10%;
+        font-size: 30px;
+        margin-bottom: 20%;
+        border-bottom: 6px solid #4caf50;
+      }
+      .bnt{
+        border: 2px solid #4caf50;
+        background: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 25px;
+        float: left;
+        margin-top: 50px;
+        width: 100%;
+        margin-bottom: 20%;
+      }
+      .hell{
+        color: azure;
+        margin-bottom: 20px;
+      }
+      .textbox{
+        width:100%;
+      }
+      .edit{
+
+      }
+      .nak{
+
+      }
+      textarea{
+        float: right;
+        width: 90%;
+      }
+      iframe{
+          width: 100%;
+          height: 300px;
+          margin-bottom: 50px;
+      }
+}

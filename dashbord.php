@@ -153,7 +153,7 @@ window.onload = timedRefresh(5000);
                                 echo "</table>";
                             }else
                             {
-                                echo "No Device Available";
+                                echo "<p class='no_dev'>No Devices Available</p>";
                             }
                             ?>
                     </div>
@@ -195,7 +195,7 @@ window.onload = timedRefresh(5000);
                         echo "</table>";
                     }else
                     {
-                        echo "No Device Available";
+                        echo "<p class='no_dev'>No Devices Available</p>";
                     }
                     ?>
                 </div>
@@ -237,7 +237,7 @@ window.onload = timedRefresh(5000);
                         echo "</table>";
                     }else
                     {
-                        echo "No Device Available";
+                        echo "<p class='no_dev'>No Devices Available</p>";
                     }
                     ?>
                 </div>

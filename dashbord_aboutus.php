@@ -1,4 +1,4 @@
-<?php
+  <?php
 session_start();
 require_once ('dbconn.php');
 if (empty($_SESSION['email'])){
@@ -7,16 +7,15 @@ if (empty($_SESSION['email'])){
 ?>
 <html>
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<title>ABOUT US</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <link href="https://fonts.googleapis.com/css?family=Karla|Yeseva+One" rel="stylesheet">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
 	<style>
 		body {
   height: 100%;
-  font-family: "Karla", sans-serif;
+  font-family: sans-serif;
   background-color: #282828;
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232f2f2f' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
 .container {

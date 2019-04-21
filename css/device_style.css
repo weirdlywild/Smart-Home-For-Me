@@ -24,7 +24,7 @@ body{
     font-size: 20px;
     padding: 8px 0;
     margin: 8px 0;
-    border-bottom: 1px solid #4caf50;
+    border-bottom: 2px solid #4caf50;
 }
 .textbox i{
     width: 26px;
@@ -61,7 +61,7 @@ body{
     font-size: 18px;
     width: 100%;
     float: left;
-    border-bottom: 1px solid #4caf50;
+    border-bottom: 2px solid #4caf50;
     padding: 8px 0;
     margin: 8px 0;
     webkit-appearance: none;

@@ -61,6 +61,9 @@ legend
   border-bottom: 3px solid #4caf50 !important;
   padding-left: 15px;
 }
+.no_dev{
+  background-color: #282828;
+}
 .leg_ti{
   margin-left: 15px;
   font-size:24px;
@@ -105,7 +108,11 @@ td,th{
   background: black;
   transition: 240ms;
 }
+.hello{
+  font-size: 25px;
+  line-height: 1;
 
+}
 .toggleCheck:checked + .toggleBtn { background: green; }
 .toggleCheck:checked + .toggleBtn::after { transform: translateX(100%); }
 @media screen and (min-width: 601px) {
