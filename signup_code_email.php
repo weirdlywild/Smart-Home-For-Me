@@ -71,7 +71,7 @@ else
         $htmlStr .= "<a href='{$verificationLink}' target='_blank' style='padding:1em; font-weight:bold; background-color:blue; color:#fff;'>VERIFY EMAIL</a><br /><br /><br />";
 
         $htmlStr .= "Kind regards,<br />";
-        $htmlStr .= "<a href='http://localhost/Smart-Home-For-Me/' target='_blank'>The Code of a Ninja</a><br />";
+        $htmlStr .= "<a href='http://localhost/Smart-Home-For-Me/' target='_blank'>SmartHomeForMe</a><br />";
 
 
         //$ename = "SmatHomeForMe";
