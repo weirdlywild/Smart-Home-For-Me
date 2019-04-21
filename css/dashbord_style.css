@@ -61,6 +61,9 @@ legend
   border-bottom: 3px solid #4caf50 !important;
   padding-left: 15px;
 }
+.no_dev{
+  background-color: #282828;
+}
 .leg_ti{
   margin-left: 15px;
   font-size:24px;

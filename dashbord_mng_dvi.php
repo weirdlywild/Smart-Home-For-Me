@@ -143,7 +143,7 @@ i:hover{
                                           echo "</table>";
                                       }else
                                       {
-                                          echo "No Data Available";
+                                          echo "<p class='no_dev'>No Devices Available</p>";
                                       }
                                       ?>
                               </div>
@@ -186,7 +186,7 @@ i:hover{
                                   echo "</table>";
                               }else
                               {
-                                  echo "No Data Available";
+                                  echo "<p class='no_dev'>No Devices Available</p>";
                               }
                               ?>
                           </div>
@@ -229,7 +229,7 @@ i:hover{
                                   echo "</table>";
                               }else
                               {
-                                  echo "No Data Available";
+                                  echo "<p class='no_dev'>No Devices Available</p>";
                               }
                               ?>
                           </div>
