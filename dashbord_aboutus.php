@@ -1,4 +1,4 @@
-<?php
+  <?php
 session_start();
 require_once ('dbconn.php');
 if (empty($_SESSION['email'])){
