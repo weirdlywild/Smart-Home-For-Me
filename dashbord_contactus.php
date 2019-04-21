@@ -23,7 +23,7 @@ $name = $row['name'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CONTACT US</title>
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
-    <link rel="stylesheet" href="css/dashbord_style.css">
+    <link rel="stylesheet" href="css/dashbord_contactus.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -31,6 +31,7 @@ $name = $row['name'];
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+
 
   </head>
   <body>
@@ -85,135 +86,45 @@ $name = $row['name'];
           <br class="d-none d-md-inline">
           <br class="d-none d-md-inline">
 
-          <h1><span class="heading">CONTACT US</span></h1>
-          /* program for family tree.*/
-          domains
-          	person=symbol
-          predicates
-          	male(person)
-          	female(person)
-          	father(person,person)
-          	mother(person,person)
-          	grandfather(person,person)
-          	grandmother(person,person)
-          	siblings(person,person)
-          	brother(person,person)
-          	sister(person,person)
-          	son(person,person)
-          	daughter(person,person)
-          	wife(person,person)
-          	husband(person,person)
-          	uncle(person,person)
-          	aunt(person,person)
-          	cousin_brother(person,person)
-          	cousin_sister(person,person)
-          clauses
-          	male(bhikhusinh).
-          	male(harendrasinh).
-          	male(pankajbhai).
-          	male(gulabsinh).
-          	male(soham).
-          	male(ganpatsinh).
-          	male(raj).
-          	male(jigar).
-          	male(meghraj).
-          	female(jaymatiben).
-          	female(parvatiben).
-          	female(kamuben).
-          	female(bhanuben).
-          	female(divyaben).
-          	father(bhikhusinh,jaymatiben).
-          	father(bhikhusinh,harendrasinh).
-          	father(bhikhusinh,pankajbhai).
-          	father(harendrasinh,raj).
-          	father(harendrasinh,jigar).
-          	father(pankajbhai,meghraj).
-          	father(gulabsinh,soham).
-          	father(ganpatsinh,bhanuben).
-          	mother(kamuben,jaymatiben).
-          	mother(kamuben,harendrasinh).
-          	mother(kamuben,pankajbhai).
-          	mother(bhanuben,raj).
-          	mother(bhanuben,jigar).
-          	mother(divyaben,meghraj).
-          	mother(jaymatiben,soham).
+          <h1><span class="contact_head">CONTACT US</span></h1>
+          <<h2 class="hell">Say Hello To US</h2>
 
-          	grandfather(X,Y) :-
-          male(X),
-          			father(X,Z),
-          		    	father(Z,Y).
-          	grandmother(X,Y) :-
-          			female(X),
-          			mother(X,Z),
-          			father(Z,Y).
-          	siblings(X,Y) :-
-          			father(Z,X),
-          			father(Z,Y),
-          			not(X=Y).
-          	brother(X,Y) :-
-          			male(X),
-          siblings(X,Y).
-          	sister(X,Y) :-
-          			female(X),
-          siblings(X,Y).
-          	son(X,Y) :-
-          			male(X),
-          			father(Y,X);
-          			mother(Y,X).
-          	daughter(X,Y) :-
-          			female(X),
-          			father(Y,X);
-          			mother(Y,X).
-          	wife(X,Y) :-
-          			female(X),
-          			father(Y,Z),
-          			mother(X,Z),!.
+          <div>
+            <div class="edit">
+              <form>
+                <div class="textbox">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="txtfname" name="txtfname" placeholder="First Name" required="" autofocus>
+                </div>
 
-          	husband(X,Y) :-
-          			male(X),
-          			father(X,Z),
-          			mother(Y,Z),!.
+                <div class="textbox">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="txtlname" name="txtlname" placeholder="Last Name" required="" autofocus>
+                </div>
 
-          	uncle(X,Y):-
-          			male(X),
-          			father(Z,Y),
-          			siblings(Z,X);
-          			male(X),
-          			mother(Z,Y),
-          			siblings(Z,X);
-          			male(X),
-          			mother(Z,Y),
-          			siblings(R,Z),
-          			husband(X,R);
-          			male(X),
-          			father(Z,Y),
-          			siblings(Z,R),
-          			husband(X,R),!.
-          	aunt(X,Y) :-
-          			female(X),
-          			father(Z,Y),
-          			siblings(Z,X);
-          			female(X),
-          			mother(Z,Y),
-          			siblings(Z,X);
-          			female(X),
-          			father(Z,Y),
-          			siblings(R,Z),
-          			wife(X,R);
-          			female(X),
-          			mother(Z,Y),
-          			siblings(Z,R),
-          			wife(X,R),!.
-          cousin_brother(X,Y):-
-          				male(X),
-          				father(Z,X),
-          				uncle(Z,Y).
-          	cousin_sister(X,Y):-
-          				female(X),
-          				father(Z,X),
-          				uncle(Z,Y).
+                <div class="textbox">
+                    <i class="fa fa-at"></i>
+                    <input type="text" id="txtmail" name="txtfmail" placeholder="Email" required="" autofocus>
+                </div>
 
-     </main>
+                <div class="textbox">
+                    <i class="fa fa-edit"></i>
+                    <textarea rows="5"></textarea>
+                </div>
+                <div>
+                <input type="submit" class="bnt">
+              </div>
+                </form>
+              </div>
+
+              <div class="nak">
+                <br class="d-none d-lg-inlie"/>
+                <br class="d-none d-lg-inlie"/>
+                <iframe src="https://maps.google.com/maps?q=svmit%20bharuch&t=&z=13&ie=UTF8&iwloc=&output=embed" scrolling="no"></iframe>
+              </div>
+          </div>
+        </div>
+        </main>
     </div>
 </div>
   </body>
