@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddd3c62f-79ed-423a-9f2a-d994366a0633" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Smart-Home-For-Me.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Smart-Home-For-Me.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/change_pass_code.php" beforeDir="false" afterPath="$PROJECT_DIR$/change_pass_code.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashbord_aboutus.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashbord_aboutus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensor.php" beforeDir="false" afterPath="$PROJECT_DIR$/sensor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup_code_email.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup_code_email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,29 +13,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/PHPMailer/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashbord_profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="true" selection-end-line="5" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashbord_aboutus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7649">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="7565">
+              <caret line="445" column="45" selection-start-line="445" selection-start-column="45" selection-end-line="445" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dashbord_contactus.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/signup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -80,7 +77,6 @@
         <option value="$PROJECT_DIR$/dashbord_profile.php" />
         <option value="$PROJECT_DIR$/dashbord_profile_code.php" />
         <option value="$PROJECT_DIR$/change_pass.php" />
-        <option value="$PROJECT_DIR$/signup.php" />
         <option value="$PROJECT_DIR$/js/dashbord_code.js" />
         <option value="$PROJECT_DIR$/dashbord.php" />
         <option value="$PROJECT_DIR$/dashbord_mng_dvi.php" />
@@ -89,6 +85,7 @@
         <option value="$PROJECT_DIR$/signup_code_email.php" />
         <option value="$PROJECT_DIR$/change_pass_code.php" />
         <option value="$PROJECT_DIR$/dashbord_aboutus.php" />
+        <option value="$PROJECT_DIR$/signup.php" />
       </list>
     </option>
   </component>
@@ -101,7 +98,12 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHPonXampp" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHPonXampp">
+    <include_path>
+      <path value="$PROJECT_DIR$/PHPMailer/vendor/composer" />
+      <path value="$PROJECT_DIR$/PHPMailer/vendor/phpmailer/phpmailer" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="425" />
     <option name="y" value="129" />
@@ -116,6 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,7 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,7 +197,8 @@
       <workItem from="1554052360518" duration="10326000" />
       <workItem from="1554189654309" duration="14104000" />
       <workItem from="1554218593456" duration="18569000" />
-      <workItem from="1555775622776" duration="2329000" />
+      <workItem from="1555775622776" duration="3447000" />
+      <workItem from="1555827029530" duration="1982000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <created>1553892301439</created>
@@ -288,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554241133326</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="final_with_aboutus php">
+      <created>1555778213212</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555778213212</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -306,13 +316,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73324000" />
+    <option name="totallyTimeSpent" value="76424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27249357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27570695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -348,17 +357,11 @@
     <MESSAGE value="final_with_backend 61%" />
     <MESSAGE value="final_with_backend 63%" />
     <MESSAGE value="final_with_backend 63.5%" />
-    <option name="LAST_COMMIT_MESSAGE" value="final_with_backend 63.5%" />
+    <MESSAGE value="final_with_aboutus php" />
+    <option name="LAST_COMMIT_MESSAGE" value="final_with_aboutus php" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.php" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/hide.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -523,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signup_code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -561,15 +557,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashbord_aboutus.php">
+    <entry file="file://$PROJECT_DIR$/dashbord_contactus.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/email.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7649">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="-597" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashbord_contactus.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/weather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2297" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashbord_aboutus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7565">
+          <caret line="445" column="45" selection-start-line="445" selection-start-column="45" selection-end-line="445" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
