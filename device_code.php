@@ -34,6 +34,6 @@ if ($dpass!=$lpass){
     }
     else
     {
-        echo "Error :".$dsql;
+        echo "Error :".$desql;
     }
 }

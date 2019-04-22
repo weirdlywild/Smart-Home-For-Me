@@ -23,7 +23,7 @@ if(isset($_POST['txtfname']) && isset($_POST['txtmail']) && isset($_POST['txtlna
     $email = $_POST['txtmail'];
     $message = $_POST['txtwrite'];
 }
-$formcontent="From: $fname $lname <br> Email : $email <br> Message: $message";
+$formcontent="From : $fname $lname <br> Email : $email <br><br> <h3>Message :</h3> <h4>$message</h4>";
 $mail->Subject = 'Contact Form Response';
 $mail->Body = $formcontent;
 $mail->addAddress('pruthvipatel2807@gmail.com', 'SmartHomeForMe');

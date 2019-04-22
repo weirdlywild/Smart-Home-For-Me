@@ -1,3 +1,10 @@
+<?php
+session_start();
+require_once ('dbconn.php');
+if (empty($_SESSION['email'])){
+    header("Location: login.php");
+}
+?>
 <html lang="en">
 <head>
 <title>Change Password</title>

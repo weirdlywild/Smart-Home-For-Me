@@ -147,7 +147,7 @@ $name = $row['name'];
                     <div class="c-info">
                        <h5>For More Information:</h5>
                         <p><strong>Email:</strong></p>
-                        <a href="mailto:ravipatel597288@gmail.com?Subject=contact%20us" target="_top">1)    ravipatel597288@gmail.com</a>
+                        <a href="mailto:ravipatel597288@gmail.com?Subject=contact%20us" target="_top">1)    ravipatel59728@gmail.com</a>
                         <a href="mailto:jainamsutariya24@gmail.com?Subject=contact%20us" target="_top">2)    jainamsutariya24@gmail.com</a>
                     </div>
                     <br class="d-none d-lg-inlie"/>
