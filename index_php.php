@@ -17,7 +17,11 @@ function Visit($url){
        else return false;
 }
 if (Visit("http://07rj-60524.portmap.host:51738"))
-       echo "Website OK"."n";
+       echo "<script>
+       window.location.href='http://07rj-60524.portmap.host:51738/Smart-Home-For-Me/';
+       </script>";
 else
-       echo "Website DOWN";
+       echo "<script>
+       window.location.href='sorry_offline.php';
+       </script>";
 ?>

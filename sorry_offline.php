@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
-  <title>Error 404</title>
+  <title>Pi Is Offline</title>
 
  <HEAD>
 
