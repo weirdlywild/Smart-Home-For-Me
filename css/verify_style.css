@@ -37,6 +37,10 @@ margin-top: 50px;
 text-align: center;
 color: white;
 }
+h5{
+  color: azure;
+  text-align: center;
+}
 .hello{
   font-size: 25px;
   line-height: 1;
@@ -62,6 +66,9 @@ color: white;
         float: right;
         margin-right: 20%;
       }
+      .one{
+        margin-top: 50px;
+      }
       .txt_ver{
         color: azure;
         font-size: 25px;
@@ -83,6 +90,9 @@ color: white;
         border-radius: 5px;
         font-size: 20px;
         float: right;
+      }
+      .one{
+        margin-top: 50px;
       }
       .txt_ver{
         color: azure;
