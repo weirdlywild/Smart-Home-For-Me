@@ -1,4 +1,4 @@
-  <?php
+<?php
 session_start();
 require_once ('dbconn.php');
 if (empty($_SESSION['email'])){
@@ -442,7 +442,7 @@ const app = new Vue({
       if (!this.isOk) {
         this.selectedPersonIndex = index;
         this.isSelected = true;
-        el.target.parentElement.className == "person-details"
+        el.target.parentElement.className === "person-details"
           ? (this.selectedPerson = el.target.parentElement.parentElement)
           : (this.selectedPerson = el.target.parentElement);
 

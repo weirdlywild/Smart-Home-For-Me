@@ -91,7 +91,7 @@ $name = $row['name'];
 
           <div>
             <div class="edit">
-              <form>
+              <form action="dashbord_contactus_code.php" method="post">
                 <div class="textbox">
                     <i class="fa fa-user"></i>
                     <input type="text" id="txtfname" name="txtfname" placeholder="First Name" required="" autofocus>
@@ -104,12 +104,12 @@ $name = $row['name'];
 
                 <div class="textbox">
                     <i class="fa fa-at"></i>
-                    <input type="text" id="txtmail" name="txtfmail" placeholder="Email" required="" autofocus>
+                    <input type="text" id="txtmail" name="txtmail" placeholder="Email" required="" autofocus>
                 </div>
 
                 <div class="textbox">
                     <i class="fa fa-edit"></i>
-                    <textarea rows="5" placeholder="Write Here..."></textarea>
+                    <textarea rows="5" id="txtwrite" name="txtwrite" placeholder="Write Here..."></textarea>
                 </div>
                 <div class="btn_cent">
                 <input type="submit" class="bnt" value="Send">
@@ -137,8 +137,8 @@ $name = $row['name'];
           <div class="col-md-4">
                     <div class="c-info">
                        <h5>Contact:</h5>
-                       <p><strong>Phone:</strong> +91 740-5243-749</p>
-                       <p><strong>Fax:</strong> +91 991-3828-798</p>
+                        <a href="tel:7405243749"><p><strong>Phone:</strong> +91 74052 43749</p></a>
+                        <a href="tel:9913828798"><p><strong>Phone:</strong> +91 99138 28798</p></a>
                     </div>
                     <br class="d-none d-lg-inlie"/>
           </div>
@@ -147,8 +147,8 @@ $name = $row['name'];
                     <div class="c-info">
                        <h5>For More Information:</h5>
                         <p><strong>Email:</strong></p>
-                        <email>1)    ravipatel597288@gmail.com</email>
-                       <p>2)    jainamsutariya24@gmail.com</p>
+                        <a href="mailto:ravipatel597288@gmail.com?Subject=contact%20us" target="_top">1)    ravipatel59728@gmail.com</a>
+                        <a href="mailto:jainamsutariya24@gmail.com?Subject=contact%20us" target="_top">2)    jainamsutariya24@gmail.com</a>
                     </div>
                     <br class="d-none d-lg-inlie"/>
           </div>

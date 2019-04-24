@@ -62,26 +62,18 @@ else
         $verificationCode = md5(uniqid("smarthome", true));
 
         // send the email verification
-        $verificationLink = "http://localhost/Smart-Home-For-Me/activate.php?code=" . $verificationCode;
+        $verificationLink = "http://192.168.1.3/Smart-Home-For-Me/activate.php?code=" . $verificationCode;
 
         $htmlStr = "";
         $htmlStr .= "Hi " . $name . ",<br /><br />";
 
-        $htmlStr .= "Please click the button below to verify your subscription and have access to the download center.<br /><br /><br />";
+        $htmlStr .= "Please click the button below to verify your subscription and have access to the smart home for me website.<br /><br /><br />";
         $htmlStr .= "<a href='{$verificationLink}' target='_blank' style='padding:1em; font-weight:bold; background-color:blue; color:#fff;'>VERIFY EMAIL</a><br /><br /><br />";
 
         $htmlStr .= "Kind regards,<br />";
-        $htmlStr .= "<a href='http://localhost/Smart-Home-For-Me/' target='_blank'>The Code of a Ninja</a><br />";
+        $htmlStr .= "<a href='http://localhost/Smart-Home-For-Me/' target='_blank'>SmartHomeForMe</a><br />";
 
-
-        //$ename = "SmatHomeForMe";
-        //$email_sender = "pruthvipatel2807@gmail.com";
-        $mail->Subject = 'Verification Link | The Code Of A Ninja | Subscription';
-        //$recipient_email = $email;
-
-        //$headers  = "MIME-Version: 1.0\r\n";
-        //$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-        //$headers .= "From: {$ename} <{$email_sender}> \n";
+        $mail->Subject = 'Verification Link | SmartHomeForMe | Subscription of Website';
 
         $mail->Body = $htmlStr;
         $mail->addAddress($email, $name);
@@ -90,11 +82,7 @@ else
           echo "Mailer Error: " . $mail->ErrorInfo;
           die("Sending failed.");
         }else{
-          // tell the user a verification email were sent
-          //echo "<!-- <div id='successMessage'>A verification email were sent to <b>" . $email . "</b>, please open your email inbox and click the given link so you can login.</div>";-->
-
-
-          // save the email in the database
+            // save the email in the database
           $created = date('Y-m-d H:i:s');
 
           //write query
@@ -104,11 +92,9 @@ else
           // Execute the query
           $result = mysqli_query($conn , $sql);
           if($result){
-            // echo "<div>Unverified email was saved to the database.</div>";
             header("Location: verify.php");
           }else{
-            echo "<div>Unable to save your email to the database.";
-            //print_r($stmt->errorInfo());
+            echo "<div>Unable to save your email to the database.</div>";
           }
         }
       }

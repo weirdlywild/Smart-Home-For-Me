@@ -11,7 +11,7 @@
 <?php
 session_start();
 require_once ('dbconn.php');
-if (empty($_SESSION['email'])){
+if (!($_SESSION['email'])){
 header("Location: login.php");
 }
 $email = $_SESSION['email'];
