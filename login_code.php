@@ -25,10 +25,15 @@ if(mysqli_num_rows($result) > 0)
         session_start();
         $_SESSION['email'] = $email;
     }
+  
     header("Location: dashbord.php");
 }
 else
 {
-    echo "Invalid Username or password or Email Verification undone";
+
+  echo "<script>
+    alert('Invalid Username or password');
+  window.location.href='login.php';
+  </script>";
 }
 ?>

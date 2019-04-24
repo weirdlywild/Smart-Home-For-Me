@@ -17,7 +17,10 @@ $sql = "INSERT INTO main_data ( name, email, phone, password) VALUES ('$name','$
 $result = mysqli_query($conn , $sql);
 if($result)
 {
-    header("Location: login.php");
+  echo "<script>
+    alert('Signup Successfully');
+  window.location.href='login.php';
+  </script>";
 }
 else
 {

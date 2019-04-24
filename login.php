@@ -39,11 +39,11 @@
         <form action="login_code.php" method="post">
             <div class="textbox">
                 <i class="fas fa-user"></i>
-                <input type="email" id="txtemail" name="txtemail" placeholder="Email Id" autofocus>
+                <input type="email" id="txtemail" name="txtemail" placeholder="Email Id" autofocus required>
             </div>
             <div class="textbox">
                 <i class="fas fa-lock"></i>
-                <input type="password" id="pass" name="pass" placeholder="Password">
+                <input type="password" id="pass" name="pass" placeholder="Password" required>
             </div>
             <label class="so_pass">
                 <input type="checkbox" onclick="shw_pass()"><strong>Show Password</strong>
