@@ -16,15 +16,26 @@ $opass = md5($pwd);
 $npwd=$_POST['pass'];
 $npass=md5($npwd);
 
+$one ="SELECT * FROM main_data WHERE email = '$email' AND password='$opass' AND verified = '1'";
+$oresult = mysqli_query($conn , $one);
 
-$sql = "UPDATE `main_data` SET `password` = '$npass' WHERE `main_data`.`email` = '$email' AND `password` = '$opass'";
-$result = mysqli_query($conn , $sql);
-if($result === TRUE)
+if(mysqli_num_rows($oresult) > 0)
 {
-    header("Location: dashbord_profile.php");
+  $sql = "UPDATE `main_data` SET `password` = '$npass' WHERE `email` = '$email' AND `password` = '$opass'";
+  $result = mysqli_query($conn , $sql);
+  if($result === TRUE)
+  {
+    echo "<script>
+      alert('Password Changed Successfully');
+    window.location.href='dashbord_profile.php';
+    </script>";
+  }
 }
 else
-{
-    echo "Invalid password";
-}
+  {
+    echo "<script>
+      alert('Wrong Old Password');
+    window.location.href='change_pass.php';
+    </script>";
+  }
 ?>

@@ -377,7 +377,7 @@ const persons = [
     photo: "images/about/pruthvi_1.jpg",
     title: "Full Stack Devloper",
     bio:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
+      "<p></p>",
     social: {
       facebook: "https://www.facebook.com/pruthvi.patel.1257",
       twitter: "https://twitter.com/Pruthvi_2807?s=03",
@@ -390,7 +390,7 @@ const persons = [
     photo: "images/about/jainam.jpg",
     title: "UI Designer",
     bio:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
+      "<p></p>",
     social: {
       facebook: "https://www.facebook.com/jainam.sutariya.9",
       twitter: "#",
@@ -403,7 +403,7 @@ const persons = [
     photo: "images/about/ravi.jpg",
     title: "QA Engineer",
     bio:
-      "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto ea blanditiis quo labore esse magnam illum ut quibusdam. Corrupti ratione iure aliquam adipisci! Harum vitae laboriosam temporibus illo suscipit?</p><p>Saepe repudiandae rerum quam ut perferendis, ullam similique nemo quod, assumenda mollitia consectetur. Eveniet optio maxime perferendis odit possimus? Facilis architecto nesciunt doloribus consectetur culpa veritatis accusamus expedita quos voluptate!</p><p>Nisi provident minus possimus optio voluptate rem, perspiciatis, placeat, culpa aperiam quod temporibus.</p>",
+      "<p></p>",
     social: {
       facebook: "https://www.facebook.com/patel.ravi.1048554",
       twitter: "#",

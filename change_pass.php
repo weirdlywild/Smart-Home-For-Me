@@ -44,7 +44,7 @@ if (empty($_SESSION['email'])){
     <form action="change_pass_code.php" method="post">
         <div class="textbox">
             <i class="fas fa-lock"></i>
-            <input type="password" id="opass" name="opass" placeholder="Enter Your Old Password" required="" autocomplete="off">
+            <input type="password" id="opass" name="opass" placeholder="Enter Your Old Password" required="" autocomplete="off" autofocus>
         </div>
         <div class="textbox">
             <i class="fas fa-key"></i>

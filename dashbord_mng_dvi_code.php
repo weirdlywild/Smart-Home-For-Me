@@ -13,7 +13,10 @@ $result = mysqli_query($conn_device , $ddsql);
 if($result === TRUE){
     system("gpio mode ".$gpio." out");
     system("gpio write ".$gpio." 1");
-    header("Location: dashbord_mng_dvi.php");
+    echo "<script>
+      alert('Device Deleted Successfully');
+    window.location.href='dashbord_mng_dvi.php';
+    </script>";
 } else {
     echo "Error deleting record: " .$ddsql;
 }

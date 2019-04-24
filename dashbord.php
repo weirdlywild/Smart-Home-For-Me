@@ -115,7 +115,12 @@ window.onload = timedRefresh(5000);
               </article>
             </div>
           <div class="gas_sta">
-          <span>  GAS Status: <?php if($svgas==0) echo "<span class='nor'>Normal</span>"; else if($svgas==1)  echo "<span class='sus'>Suspicious</span>"; else  if($svgas==2) echo"<span class='risk'>Risk</span>"; ?></span>
+          <span>  GAS Status: <?php if($svgas==0) echo "<span class='nor'>Normal</span>"; else if($svgas==1)  echo "<span class='sus'>Suspicious</span>"; else  if($svgas==2){
+            echo"<span class='risk'>Risk</span>
+            <script>
+              alert('Gas leakage Detected Call 101');
+            </script>";
+          }  ?></span>
           </div>
 <div class="fdl">
             <fieldset class="col-md-12">

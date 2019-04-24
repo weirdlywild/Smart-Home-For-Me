@@ -32,7 +32,10 @@ if (!$mail->send()){
     echo "Mailer Error: " . $mail->ErrorInfo;
     die("Sending failed.");
 }else{
-        header("Location: dashbord_contactus.php");
+  echo "<script>
+    alert('Respond Send Successfully');
+  window.location.href='dashbord_contactus.php';
+  </script>";
 }
 function save_mail($mail)
 {

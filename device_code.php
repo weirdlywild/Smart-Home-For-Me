@@ -24,13 +24,75 @@ if(mysqli_num_rows($result) > 0)
     echo "Error :".$sql;
 }
 if ($dpass!=$lpass){
-    header("Location: device.php");
+    echo "<script>
+      alert('Invalid Password');
+    window.location.href='device.php';
+    </script>";
 }else{
+  $chkgpio="SELECT * FROM `bedroom` WHERE email='$email'";
+  $chkresult = mysqli_query($conn_device , $chkgpio);
+  if(mysqli_num_rows($chkresult) > 0)
+  {
+      while($row = mysqli_fetch_assoc($chkresult))
+      {
+          $cgpio=$row['gpio'];
+          if($cgpio==$gpio){
+            echo "<script>
+              alert('GPIO pin already Used in Bedroom');
+            window.location.href='device.php';
+            </script>";
+          }//end if
+      }
+  }else
+  {
+      echo "Error :".$sql;
+  }
+
+  $chkgpio="SELECT * FROM `hall` WHERE email='$email'";
+  $chkresult = mysqli_query($conn_device , $chkgpio);
+  if(mysqli_num_rows($chkresult) > 0)
+  {
+      while($row = mysqli_fetch_assoc($chkresult))
+      {
+          $cgpio=$row['gpio'];
+          if($cgpio==$gpio){
+            echo "<script>
+              alert('GPIO pin already Used in Hall');
+            window.location.href='device.php';
+            </script>";
+          }//end if
+      }
+  }else
+  {
+      echo "Error :".$sql;
+  }
+  $chkgpio="SELECT * FROM `kitchen` WHERE email='$email'";
+  $chkresult = mysqli_query($conn_device , $chkgpio);
+  if(mysqli_num_rows($chkresult) > 0)
+  {
+      while($row = mysqli_fetch_assoc($chkresult))
+      {
+          $cgpio=$row['gpio'];
+          if($cgpio==$gpio){
+            echo "<script>
+              alert('GPIO pin already Used in Kitchen');
+            window.location.href='device.php';
+            </script>";
+          }//end if
+      }
+  }else
+  {
+      echo "Error :".$sql;
+  }
+
     $desql ="INSERT INTO $cat (`device_id`, `email`, `name`, `dis`, `gpio`) VALUES (NULL,'$email', '$name', '$dis', '$gpio')";
     $deresult = mysqli_query($conn_device , $desql);
     if($deresult)
     {
-        header("Location: dashbord.php");
+      echo "<script>
+        alert('Device Added Successfully');
+      window.location.href='dashbord.php';
+      </script>";
     }
     else
     {
