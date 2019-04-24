@@ -36,14 +36,14 @@ if(mysqli_num_rows($result) > 0)
     $formcontent="
                     Hello $name,
                     <br><br>
-                    <h4>Welcome to SmartHomeForMe</h4>I'm so excited to have you join us. 
+                    <h4>Welcome to Smart Home For Me</h4>I'm so excited to have you join us.
                     We're feeling pretty lucky that you chose us, and I just wanna say thank you on behalf of our whole company.
                     <br><br>
-                    If you're interested in learning more about your product, feel free to contact me or anyone else on our support team at any time. 
+                    If you're interested in learning more about your product, feel free to contact me or anyone else on our support team at any time.
                     We're always here to help you in any way we can.
                     <br><br><br><br>
                     Cheers,<br>
-                    <h4>SmartHomeForMe</h4>
+                    <h4>Smart Home For Me Team</h4>
                     ";
     $mail->Subject = 'Welcome Mail';
     $mail->Body = $formcontent;
