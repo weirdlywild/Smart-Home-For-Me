@@ -1,3 +1,10 @@
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>verified!!!</title>
+  <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
+  <link rel="stylesheet" href="css/activate_style.css">
+</head>
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 require 'PHPMailer/vendor/autoload.php';
@@ -31,7 +38,7 @@ if(mysqli_num_rows($result) > 0)
 
   if($result == TRUE){
     // tell the user
-    echo "<div>Your email is valid, thanks!. You may now login.</div>";
+    echo "<div class='hello'>Your email is valid, thanks!. You may now login.</div>";
     echo "<a href='login.php'>Go to login</a>";
     $formcontent="
                     Hello $name,
@@ -53,13 +60,14 @@ if(mysqli_num_rows($result) > 0)
       die("Sending failed.");
     }
   }else{
-    echo "<div>Unable to update verification code.</div>";
+    echo "<span class='hello'>Unable to update verification code.</span>";
     //print_r($stmt->errorInfo());
   }
 }
 else
 {
 	// tell the user he should not be in this page
-	echo "<div>We can't find your verification code.</div>";
+	echo "<span class='hello'>We can't find your verification code.</span>";
 }
 ?>
+</html>

@@ -1,0 +1,18 @@
+html{
+  background: #282828;
+  color: #ffffff;
+  height: 100%;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 600px) {
+.hello{
+  font-size: 25px;
+  border-bottom: 3px solid #4caf50;
+}
+}
+@media screen and (min-width: 601px) {
+.hello{
+  font-size: 65px;
+  border-bottom: 6px solid #4caf50;
+}
+}
