@@ -62,7 +62,7 @@ else
         $verificationCode = md5(uniqid("smarthome", true));
 
         // send the email verification
-        $verificationLink = "http://07rj-60524.portmap.host:51738/Smart-Home-For-Me/activate.php?code=" . $verificationCode;
+        $verificationLink = "http://192.168.43.224/Smart-Home-For-Me/activate.php?code=" . $verificationCode;
 
         $htmlStr = "";
         $htmlStr .= "Hi " . $name . ",<br /><br />";
@@ -71,7 +71,7 @@ else
         $htmlStr .= "<a href='{$verificationLink}' target='_blank' style='padding:1em; font-weight:bold; background-color:blue; color:#fff;'>VERIFY EMAIL</a><br /><br /><br />";
 
         $htmlStr .= "Kind regards,<br />";
-        $htmlStr .= "<a href='http://07rj-60524.portmap.host:51738/Smart-Home-For-Me/' target='_blank'>SmartHomeForMe</a><br />";
+        $htmlStr .= "<a href='http:/192.168.43.224/Smart-Home-For-Me/' target='_blank'>SmartHomeForMe</a><br />";
 
         $mail->Subject = 'Verification Link | SmartHomeForMe | Subscription of Website';
 

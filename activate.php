@@ -38,8 +38,10 @@ if(mysqli_num_rows($result) > 0)
 
   if($result == TRUE){
     // tell the user
-    echo "<div class='hello'>Your email is valid, thanks!. You may now login.</div>";
-    echo "<a href='login.php'>Go to login</a>";
+    echo "<br/><span class='hello'>Your email is verified,
+     Thank You!!!.
+    You can login Now.</span>";
+    echo "<br/><a href='login.php'><button class='bnt'>Go to login</button></a>";
     $formcontent="
                     Hello $name,
                     <br><br>
@@ -60,14 +62,14 @@ if(mysqli_num_rows($result) > 0)
       die("Sending failed.");
     }
   }else{
-    echo "<span class='hello'>Unable to update verification code.</span>";
+    echo "<br/><span class='hello'>Unable to update verification code.</span>";
     //print_r($stmt->errorInfo());
   }
 }
 else
 {
 	// tell the user he should not be in this page
-	echo "<span class='hello'>We can't find your verification code.</span>";
+	echo "<br/><span class='hello'>We can't find your verification code.</span>";
 }
 ?>
 </html>
