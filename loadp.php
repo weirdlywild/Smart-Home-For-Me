@@ -9,8 +9,10 @@ if(mysqli_num_rows($dlbresult) > 0)
         system("gpio mode ".$dlbgpio." out"); //set to out pin
         $dlbpin = exec("gpio read ".$dlbgpio); //check pin status
         if($dlbpin == 1){
+            system("gpio write ".$gpio." 1");
             ?>                       <script>document.getElementById("'<?php echo $dlbgpio; ?>'").checked = false;</script>
         <?php              }else if($dlbpin == 0){
+            system("gpio write ".$gpio." 0");
             ?>                      <script>document.getElementById("'<?php echo $dlbgpio; ?>'").checked = true;</script>
             <?php
         }else{
@@ -31,8 +33,11 @@ if(mysqli_num_rows($dlhresult) > 0)
         system("gpio mode ".$dlhgpio." out"); //set to out pin
         $dlhpin = exec("gpio read ".$dlhgpio); //check pin status
         if($dlhpin == 1){
+            system("gpio write ".$gpio." 1");
             ?>                       <script>document.getElementById("'<?php echo $dlhgpio; ?>'").checked = false;</script>
-        <?php              }else if($dlhpin == 0){
+        <?php              }
+        else if($dlhpin == 0){
+            system("gpio write ".$gpio." 0");
             ?>                      <script>document.getElementById("'<?php echo $dlhgpio; ?>'").checked = true;</script>
             <?php
         }else{
@@ -53,8 +58,10 @@ if(mysqli_num_rows($dlkresult) > 0)
         system("gpio mode ".$dlkgpio." out"); //set to out pin
         $dlkpin = exec("gpio read ".$dlkgpio); //check pin status
         if($dlkpin == 1){
+            system("gpio write ".$gpio." 1");
         ?>                          <script>document.getElementById("'<?php echo $dlkgpio; ?>'").checked = false;</script>
         <?php              }else if($dlkpin == 0){
+            system("gpio write ".$gpio." 0");
             ?>                      <script>document.getElementById("'<?php echo $dlkgpio; ?>'").checked = true;</script>
             <?php
         }else{
