@@ -23,7 +23,7 @@ $phone =$row['phone'];
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PROFILE</title>
+    <title>SHFM PROFILE</title>
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
     <link rel="stylesheet" href="css/dashbord_profile_style.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -103,7 +103,7 @@ $phone =$row['phone'];
         <div><input type="text" id="txtname" name="txtname" class="text_box" placeholder="<?php echo "$name"; ?>" value="<?php echo "$name"; ?>"></div>
       <div><input type="text" id="txtemail" name="txtemail" class="text_box dis" placeholder="<?php echo "$email"; ?>" disabled></div>
       <div><input type="tel" id="txtmobile" name="txtmobile" class="text_box" placeholder="<?php echo "$phone"; ?>" value="<?php echo "$phone"; ?>"></div>
-      <div><input type="password" id="pass" name="pass" class="text_box" placeholder="Enter Your Password"></div>
+      <div><input type="password" id="pass" name="pass" class="text_box" placeholder="Enter Your Password" required></div>
       <div><input type="submit" id="btnsub" class="bnt mg_btn" value="Submit Changes"></div>
       </form>
 </div>

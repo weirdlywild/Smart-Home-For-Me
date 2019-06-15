@@ -21,7 +21,7 @@ $name = $row['name'];
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CONTACT US</title>
+    <title>SHFM CONTACT US</title>
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
     <link rel="stylesheet" href="css/dashbord_contactus.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">

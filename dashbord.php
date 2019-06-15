@@ -21,9 +21,9 @@ include 'sensor.php';
   <head>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="20"/>
+   <!--  <meta http-equiv="refresh" content="20"/> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashbord</title>
+    <title>SHFM Dashbord</title>
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
     <link rel="stylesheet" href="css/dashbord_style.css">
     <link rel="stylesheet" href="css/weather_style.css">

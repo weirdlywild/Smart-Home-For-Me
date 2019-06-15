@@ -15,7 +15,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Smart Home For Me</title>
+    <title>SHFM Login</title>
     <link rel = "icon" href ="images/logo_title.png" type = "image/x-icon">
     <link rel="stylesheet" href="css/dashbord_style.css">
     <link rel="stylesheet" href="css/login_style.css">
